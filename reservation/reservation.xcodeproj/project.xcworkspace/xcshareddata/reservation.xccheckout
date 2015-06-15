@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4356EE81-8314-45B6-A26E-7F20E85B5CAE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>reservation</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>806A92BBE4C02EADD76B2DA88A2A65E1A8900FA2</key>
+		<string>https://bitbucket.org/dingzuo/--.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>reservation/reservation.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>806A92BBE4C02EADD76B2DA88A2A65E1A8900FA2</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/dingzuo/--.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>806A92BBE4C02EADD76B2DA88A2A65E1A8900FA2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>806A92BBE4C02EADD76B2DA88A2A65E1A8900FA2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>dingzuo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
