@@ -16,3 +16,7 @@
 
 #import "FirstViewController.h"
 #import "UIViewController+BackBar.h"
+#import "SVProgressHUD.h"
+
+#define API_NN @"接口地址"
+#define BASE_URL [NSURL URLWithString:API_NN]
