@@ -9,6 +9,7 @@
 #import "FirstViewController.h"
 
 @interface FirstViewController ()
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
 
@@ -20,6 +21,15 @@
     
     [self setCustomizeBackBar];
     
+    [self.scrollView setContentSize:CGSizeMake(self.view.frame.size.width, 568)];
+}
+- (IBAction)verifyListButtonPressed:(id)sender {
+}
+- (IBAction)verifyButtonPressed:(id)sender {
+}
+- (IBAction)scanButtonPressed:(id)sender {
+}
+- (IBAction)timetableButtonPressed:(id)sender {
 }
 
 - (void)didReceiveMemoryWarning {

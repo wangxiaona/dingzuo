@@ -3,10 +3,12 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController">
             <connections>
+                <outlet property="scrollView" destination="oWh-Ja-BqX" id="Rqk-Vc-72b"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,9 +16,83 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oWh-Ja-BqX">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HNO-Dh-Vha">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+                            <color key="backgroundColor" red="1" green="0.67790248509999995" blue="0.2784431383" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="HNO-Dh-Vha" secondAttribute="height" multiplier="4:5" id="fW0-k3-5sB"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeG-7G-Gan">
+                            <rect key="frame" x="24" y="23" width="44" height="44"/>
+                            <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="verifyListButtonPressed:" destination="-1" eventType="touchUpInside" id="jBi-ab-fH2"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzl-dQ-sVk">
+                            <rect key="frame" x="225" y="367" width="58" height="63"/>
+                            <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="scanButtonPressed:" destination="-1" eventType="touchUpInside" id="wUe-1M-5mF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ax-jf-VSI">
+                            <rect key="frame" x="63" y="464" width="66" height="66"/>
+                            <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <inset key="titleEdgeInsets" minX="-25" minY="35" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="20" minY="-25" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="100" image="info.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="verifyButtonPressed:" destination="-1" eventType="touchUpInside" id="zli-FQ-jAL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKg-dv-VrJ">
+                            <rect key="frame" x="192" y="464" width="66" height="66"/>
+                            <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <inset key="titleEdgeInsets" minX="-25" minY="35" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="20" minY="-25" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="100" image="info.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="timetableButtonPressed:" destination="-1" eventType="touchUpInside" id="fka-0n-4ae"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="HNO-Dh-Vha" firstAttribute="leading" secondItem="oWh-Ja-BqX" secondAttribute="leading" id="ECf-NA-2tv"/>
+                        <constraint firstAttribute="trailing" secondItem="HNO-Dh-Vha" secondAttribute="trailing" id="SGt-aZ-szm"/>
+                        <constraint firstItem="HNO-Dh-Vha" firstAttribute="top" secondItem="oWh-Ja-BqX" secondAttribute="top" id="Z82-eU-6sY"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="oWh-Ja-BqX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4WD-Nv-xcq"/>
+                <constraint firstItem="oWh-Ja-BqX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9yZ-4x-hjd"/>
+                <constraint firstAttribute="trailing" secondItem="oWh-Ja-BqX" secondAttribute="trailing" id="EZr-a4-JfF"/>
+                <constraint firstAttribute="bottom" secondItem="oWh-Ja-BqX" secondAttribute="bottom" id="umM-We-mxv"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <point key="canvasLocation" x="239" y="342"/>
         </view>
     </objects>
+    <resources>
+        <image name="info.png" width="27" height="28"/>
+    </resources>
 </document>
