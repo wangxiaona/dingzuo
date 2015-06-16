@@ -7,9 +7,17 @@
 //
 
 #import "FirstViewController.h"
+#import "UserListViewController.h"
+#import "BindViewController.h"
+#import "TimeTableViewController.h"
 #import "ZBarSDK.h"
 
 @interface FirstViewController ()<ZBarReaderDelegate>
+{
+    UserListViewController *userListController;
+    BindViewController *bindController;
+    TimeTableViewController *timetableController;
+}
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
@@ -20,16 +28,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    [self setCustomizeBackBar];
-    
     [self.scrollView setContentSize:CGSizeMake(self.view.frame.size.width, 568)];
     self.pointView.layer.cornerRadius = 4.0f;
     self.pointView.layer.masksToBounds = YES;
     
+    userListController = [[UserListViewController alloc] initWithNibName:@"UserListViewController" bundle:nil];
+    bindController = [[BindViewController alloc] initWithNibName:@"BindViewController" bundle:nil];
+    timetableController = [[TimeTableViewController alloc] initWithNibName:@"TimeTableViewController" bundle:nil];
+    
 }
 - (IBAction)verifyListButtonPressed:(id)sender {
+    [self.navigationController pushViewController:userListController animated:YES];
 }
 - (IBAction)verifyButtonPressed:(id)sender {
+    [self.navigationController pushViewController:bindController animated:YES];
 }
 - (IBAction)scanButtonPressed:(id)sender {
     
@@ -61,6 +73,7 @@
 }
 
 - (IBAction)timetableButtonPressed:(id)sender {
+    [self.navigationController pushViewController:timetableController animated:YES];
 }
 
 - (void) imagePickerController: (UIImagePickerController*) reader

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FirstViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,8 +22,12 @@
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window setBackgroundColor:[UIColor whiteColor]];
     
+    FirstViewController *firstController = [[FirstViewController alloc]initWithNibName:@"FirstViewController" bundle:nil];
     
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:firstController];
+    self.window.rootViewController = navController;
     
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

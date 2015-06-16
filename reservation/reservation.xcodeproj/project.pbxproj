@@ -12,6 +12,14 @@
 		013BC02D1B2FBC8300155EAB /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = 013BC0281B2FBC8300155EAB /* zbar-help.html */; };
 		013BC02E1B2FBC8300155EAB /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = 013BC0291B2FBC8300155EAB /* zbar-helpicons.png */; };
 		013BC02F1B2FBC8300155EAB /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = 013BC02A1B2FBC8300155EAB /* zbar-samples.png */; };
+		013BC03A1B2FC61500155EAB /* UserListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 013BC0381B2FC61500155EAB /* UserListViewController.m */; };
+		013BC03B1B2FC61500155EAB /* UserListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 013BC0391B2FC61500155EAB /* UserListViewController.xib */; };
+		013BC03D1B2FC6E500155EAB /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 013BC03C1B2FC6E500155EAB /* libiconv.dylib */; };
+		013BC03F1B2FC6FC00155EAB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 013BC03E1B2FC6FC00155EAB /* libz.dylib */; };
+		013BC0451B2FC73A00155EAB /* BindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 013BC0431B2FC73A00155EAB /* BindViewController.m */; };
+		013BC0461B2FC73A00155EAB /* BindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 013BC0441B2FC73A00155EAB /* BindViewController.xib */; };
+		013BC04B1B2FC7B600155EAB /* TimeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 013BC0491B2FC7B600155EAB /* TimeTableViewController.m */; };
+		013BC04C1B2FC7B600155EAB /* TimeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 013BC04A1B2FC7B600155EAB /* TimeTableViewController.xib */; };
 		015083D31B2EB65B00028FC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 015083D21B2EB65B00028FC0 /* main.m */; };
 		015083D61B2EB65B00028FC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 015083D51B2EB65B00028FC0 /* AppDelegate.m */; };
 		015083D91B2EB65B00028FC0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015083D81B2EB65B00028FC0 /* ViewController.m */; };
@@ -93,6 +101,17 @@
 		013BC0281B2FBC8300155EAB /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
 		013BC0291B2FBC8300155EAB /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
 		013BC02A1B2FBC8300155EAB /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
+		013BC0371B2FC61500155EAB /* UserListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserListViewController.h; sourceTree = "<group>"; };
+		013BC0381B2FC61500155EAB /* UserListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserListViewController.m; sourceTree = "<group>"; };
+		013BC0391B2FC61500155EAB /* UserListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserListViewController.xib; sourceTree = "<group>"; };
+		013BC03C1B2FC6E500155EAB /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		013BC03E1B2FC6FC00155EAB /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		013BC0421B2FC73A00155EAB /* BindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindViewController.h; sourceTree = "<group>"; };
+		013BC0431B2FC73A00155EAB /* BindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindViewController.m; sourceTree = "<group>"; };
+		013BC0441B2FC73A00155EAB /* BindViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BindViewController.xib; sourceTree = "<group>"; };
+		013BC0481B2FC7B600155EAB /* TimeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTableViewController.h; sourceTree = "<group>"; };
+		013BC0491B2FC7B600155EAB /* TimeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTableViewController.m; sourceTree = "<group>"; };
+		013BC04A1B2FC7B600155EAB /* TimeTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeTableViewController.xib; sourceTree = "<group>"; };
 		015083CD1B2EB65B00028FC0 /* reservation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reservation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		015083D11B2EB65B00028FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		015083D21B2EB65B00028FC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -174,6 +193,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				013BC03F1B2FC6FC00155EAB /* libz.dylib in Frameworks */,
+				013BC03D1B2FC6E500155EAB /* libiconv.dylib in Frameworks */,
 				0150846C1B2EBE5500028FC0 /* QuartzCore.framework in Frameworks */,
 				0150846A1B2EBE4700028FC0 /* SystemConfiguration.framework in Frameworks */,
 				015084681B2EBE3700028FC0 /* CoreGraphics.framework in Frameworks */,
@@ -262,9 +283,41 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		013BC0361B2FC60400155EAB /* 认证用户list */ = {
+			isa = PBXGroup;
+			children = (
+				013BC0371B2FC61500155EAB /* UserListViewController.h */,
+				013BC0381B2FC61500155EAB /* UserListViewController.m */,
+				013BC0391B2FC61500155EAB /* UserListViewController.xib */,
+			);
+			path = "认证用户list";
+			sourceTree = "<group>";
+		};
+		013BC0411B2FC72F00155EAB /* 绑定用户 */ = {
+			isa = PBXGroup;
+			children = (
+				013BC0421B2FC73A00155EAB /* BindViewController.h */,
+				013BC0431B2FC73A00155EAB /* BindViewController.m */,
+				013BC0441B2FC73A00155EAB /* BindViewController.xib */,
+			);
+			path = "绑定用户";
+			sourceTree = "<group>";
+		};
+		013BC0471B2FC7A700155EAB /* 课表 */ = {
+			isa = PBXGroup;
+			children = (
+				013BC0481B2FC7B600155EAB /* TimeTableViewController.h */,
+				013BC0491B2FC7B600155EAB /* TimeTableViewController.m */,
+				013BC04A1B2FC7B600155EAB /* TimeTableViewController.xib */,
+			);
+			path = "课表";
+			sourceTree = "<group>";
+		};
 		015083C41B2EB65B00028FC0 = {
 			isa = PBXGroup;
 			children = (
+				013BC03E1B2FC6FC00155EAB /* libz.dylib */,
+				013BC03C1B2FC6E500155EAB /* libiconv.dylib */,
 				015083CF1B2EB65B00028FC0 /* reservation */,
 				0150846B1B2EBE5500028FC0 /* QuartzCore.framework */,
 				015084691B2EBE4700028FC0 /* SystemConfiguration.framework */,
@@ -338,6 +391,9 @@
 		015083FD1B2EBA8D00028FC0 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				013BC0471B2FC7A700155EAB /* 课表 */,
+				013BC0411B2FC72F00155EAB /* 绑定用户 */,
+				013BC0361B2FC60400155EAB /* 认证用户list */,
 				015083FE1B2EBA9F00028FC0 /* 首页 */,
 			);
 			path = controllers;
@@ -531,12 +587,15 @@
 				015084571B2EBD9000028FC0 /* SVProgressHUD.bundle in Resources */,
 				013BC02C1B2FBC8300155EAB /* zbar-back.png in Resources */,
 				015083E11B2EB65B00028FC0 /* LaunchScreen.xib in Resources */,
+				013BC04C1B2FC7B600155EAB /* TimeTableViewController.xib in Resources */,
 				015083DE1B2EB65B00028FC0 /* Images.xcassets in Resources */,
+				013BC03B1B2FC61500155EAB /* UserListViewController.xib in Resources */,
 				015084031B2EBA9F00028FC0 /* FirstViewController.xib in Resources */,
 				013BC02F1B2FBC8300155EAB /* zbar-samples.png in Resources */,
 				013BC02D1B2FBC8300155EAB /* zbar-help.html in Resources */,
 				015084401B2EBC7200028FC0 /* LICENSE in Resources */,
 				013BC02E1B2FBC8300155EAB /* zbar-helpicons.png in Resources */,
+				013BC0461B2FC73A00155EAB /* BindViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +615,7 @@
 			files = (
 				015084561B2EBD9000028FC0 /* SVIndefiniteAnimatedView.m in Sources */,
 				0150843C1B2EBC7200028FC0 /* AFURLConnectionOperation.m in Sources */,
+				013BC03A1B2FC61500155EAB /* UserListViewController.m in Sources */,
 				015084371B2EBC7200028FC0 /* AFHTTPRequestOperation.m in Sources */,
 				0150843A1B2EBC7200028FC0 /* AFNetworkReachabilityManager.m in Sources */,
 				0150844F1B2EBCB900028FC0 /* NNManager.m in Sources */,
@@ -567,6 +627,7 @@
 				015084471B2EBC7200028FC0 /* UIProgressView+AFNetworking.m in Sources */,
 				0150843E1B2EBC7200028FC0 /* AFURLResponseSerialization.m in Sources */,
 				015083D91B2EB65B00028FC0 /* ViewController.m in Sources */,
+				013BC04B1B2FC7B600155EAB /* TimeTableViewController.m in Sources */,
 				015083D61B2EB65B00028FC0 /* AppDelegate.m in Sources */,
 				015084451B2EBC7200028FC0 /* UIButton+AFNetworking.m in Sources */,
 				015084461B2EBC7200028FC0 /* UIImageView+AFNetworking.m in Sources */,
@@ -580,6 +641,7 @@
 				015084411B2EBC7200028FC0 /* README.md in Sources */,
 				015084021B2EBA9F00028FC0 /* FirstViewController.m in Sources */,
 				015084391B2EBC7200028FC0 /* AFHTTPSessionManager.m in Sources */,
+				013BC0451B2FC73A00155EAB /* BindViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
