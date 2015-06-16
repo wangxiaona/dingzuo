@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface FirstViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIView *pointView;
+@property (strong, nonatomic) IBOutlet UIView *scanView;
+@property(strong,nonatomic)NSTimer *timer;
+- (IBAction)cancelButtonPressed:(id)sender;
 
 @end
