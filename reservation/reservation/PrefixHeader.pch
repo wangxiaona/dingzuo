@@ -20,6 +20,8 @@
 #import "SVProgressHUD.h"
 #import "UIView+Sizes.h"
 #import "NNManager.h"
+#import "EGOImageView.h"
+
 
 
 #define API_NN @"接口地址"

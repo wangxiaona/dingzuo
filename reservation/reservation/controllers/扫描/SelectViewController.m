@@ -41,15 +41,39 @@
 //    groupNo					--->字符串类型编号
 //    name					--->名称
 //    manager					--->负责人
+    
+    NSDictionary *dic = self.tableViewList[indexPath.row];
     switch (self.type_n) {
         case YES:
         {
+            static NSString *cellIdentifier = @"projectsCell";
+            ProjectTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
             
+            if (cell == nil) {
+                
+                NSArray *array = [[NSBundle mainBundle] loadNibNamed:@"ProjectTableViewCell" owner:self options:nil];
+                cell = [array objectAtIndex:0];
+                cell.selectionStyle = UITableViewCellSelectionStyleGray;
+                
+            }
+            
+            return cell;
         }
             break;
         case NO:
         {
+            static NSString *cellIdentifier = @"groupsCell";
+            GroupTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
             
+            if (cell == nil) {
+                
+                NSArray *array = [[NSBundle mainBundle] loadNibNamed:@"GroupTableViewCell" owner:self options:nil];
+                cell = [array objectAtIndex:0];
+                cell.selectionStyle = UITableViewCellSelectionStyleGray;
+                
+            }
+            
+            return cell;
         }
             break;
         default:
@@ -59,11 +83,11 @@
     return nil;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 44;
+    return self.type_n?150:120;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
