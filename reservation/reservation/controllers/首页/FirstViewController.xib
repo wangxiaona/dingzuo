@@ -20,7 +20,7 @@
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="oWh-Ja-BqX">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="HNO-Dh-Vha">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
@@ -86,7 +86,7 @@
         </view>
         <view contentMode="scaleToFill" id="p01-Qy-mmy">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view alpha="0.29999999999999999" contentMode="scaleToFill" id="g7e-dL-gD5">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="149"/>
@@ -144,7 +144,7 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="551" y="469"/>
+            <point key="canvasLocation" x="717" y="411"/>
         </view>
     </objects>
     <resources>

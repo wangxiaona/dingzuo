@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIFolderTableView.h"
 
-@interface BindViewController : UIViewController
-
+@interface BindViewController : UIViewController<UITableViewDataSource, UITableViewDelegate,UITextFieldDelegate>
+@property (strong, nonatomic) NSDictionary *type;
+@property (strong, nonatomic) NSString *verifyNum;
+@property (strong, nonatomic) NSString *huiguanNum;
+@property (strong, nonatomic) IBOutlet UIFolderTableView *tableView;
+-(void)subCateBtnAction:(UIButton *)btn;
 @end

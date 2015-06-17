@@ -16,7 +16,11 @@
 
 #import "FirstViewController.h"
 #import "UIViewController+BackBar.h"
+#import "UIBarButtonItem+Factory.h"
 #import "SVProgressHUD.h"
+#import "UIView+Sizes.h"
+#import "NNManager.h"
+
 
 #define API_NN @"接口地址"
 #define BASE_URL [NSURL URLWithString:API_NN]

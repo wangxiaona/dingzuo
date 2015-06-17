@@ -20,6 +20,31 @@
 		013BC0461B2FC73A00155EAB /* BindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 013BC0441B2FC73A00155EAB /* BindViewController.xib */; };
 		013BC04B1B2FC7B600155EAB /* TimeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 013BC0491B2FC7B600155EAB /* TimeTableViewController.m */; };
 		013BC04C1B2FC7B600155EAB /* TimeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 013BC04A1B2FC7B600155EAB /* TimeTableViewController.xib */; };
+		013BC0751B2FF9B800155EAB /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 013BC0741B2FF9B800155EAB /* libstdc++.dylib */; };
+		013C445C1B311D0B0056CFD1 /* UPStackMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44591B311D0B0056CFD1 /* UPStackMenu.m */; };
+		013C445D1B311D0B0056CFD1 /* UPStackMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C445B1B311D0B0056CFD1 /* UPStackMenuItem.m */; };
+		013C44651B311F620056CFD1 /* FolderCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44601B311F620056CFD1 /* FolderCoverView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		013C44661B311F620056CFD1 /* UIFolderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44621B311F620056CFD1 /* UIFolderTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		013C44671B311F620056CFD1 /* UIView+screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44641B311F620056CFD1 /* UIView+screenshot.m */; };
+		013C44701B312CD30056CFD1 /* SubCateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C446E1B312CD30056CFD1 /* SubCateViewController.m */; };
+		013C44711B312CD30056CFD1 /* SubCateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 013C446F1B312CD30056CFD1 /* SubCateViewController.xib */; };
+		013C44751B312DD80056CFD1 /* CateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44731B312DD80056CFD1 /* CateTableViewCell.m */; };
+		013C44761B312DD80056CFD1 /* CateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 013C44741B312DD80056CFD1 /* CateTableViewCell.xib */; };
+		013C447E1B3133600056CFD1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013C447D1B3133600056CFD1 /* AVFoundation.framework */; };
+		013C447F1B3133720056CFD1 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013C447B1B31334E0056CFD1 /* MediaPlayer.framework */; };
+		013C44801B31337C0056CFD1 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013C44791B3133440056CFD1 /* CoreVideo.framework */; };
+		013C44811B3133880056CFD1 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013C44771B31333A0056CFD1 /* CoreMedia.framework */; };
+		013C44841B3136580056CFD1 /* back_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 013C44831B3136580056CFD1 /* back_arrow@2x.png */; };
+		013C44871B31406B0056CFD1 /* UIBarButtonItem+Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44861B31406B0056CFD1 /* UIBarButtonItem+Factory.m */; };
+		013C448A1B3140CA0056CFD1 /* UIView+Sizes.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44891B3140CA0056CFD1 /* UIView+Sizes.m */; };
+		013C448D1B31431D0056CFD1 /* 单选-icon96x96-默认@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 013C448B1B31431D0056CFD1 /* 单选-icon96x96-默认@2x.png */; };
+		013C448E1B31431D0056CFD1 /* 单选-icon96x96-选中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 013C448C1B31431D0056CFD1 /* 单选-icon96x96-选中@2x.png */; };
+		013C44931B3146D70056CFD1 /* SelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44911B3146D70056CFD1 /* SelectViewController.m */; };
+		013C44941B3146D70056CFD1 /* SelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 013C44921B3146D70056CFD1 /* SelectViewController.xib */; };
+		013C44981B31491E0056CFD1 /* GroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44961B31491E0056CFD1 /* GroupTableViewCell.m */; };
+		013C44991B31491E0056CFD1 /* GroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 013C44971B31491E0056CFD1 /* GroupTableViewCell.xib */; };
+		013C449D1B31492F0056CFD1 /* ProjectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C449B1B31492F0056CFD1 /* ProjectTableViewCell.m */; };
+		013C449E1B31492F0056CFD1 /* ProjectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 013C449C1B31492F0056CFD1 /* ProjectTableViewCell.xib */; };
 		015083D31B2EB65B00028FC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 015083D21B2EB65B00028FC0 /* main.m */; };
 		015083D61B2EB65B00028FC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 015083D51B2EB65B00028FC0 /* AppDelegate.m */; };
 		015083D91B2EB65B00028FC0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015083D81B2EB65B00028FC0 /* ViewController.m */; };
@@ -112,6 +137,43 @@
 		013BC0481B2FC7B600155EAB /* TimeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTableViewController.h; sourceTree = "<group>"; };
 		013BC0491B2FC7B600155EAB /* TimeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTableViewController.m; sourceTree = "<group>"; };
 		013BC04A1B2FC7B600155EAB /* TimeTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeTableViewController.xib; sourceTree = "<group>"; };
+		013BC0741B2FF9B800155EAB /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		013C44581B311D0B0056CFD1 /* UPStackMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPStackMenu.h; sourceTree = "<group>"; };
+		013C44591B311D0B0056CFD1 /* UPStackMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPStackMenu.m; sourceTree = "<group>"; };
+		013C445A1B311D0B0056CFD1 /* UPStackMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPStackMenuItem.h; sourceTree = "<group>"; };
+		013C445B1B311D0B0056CFD1 /* UPStackMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPStackMenuItem.m; sourceTree = "<group>"; };
+		013C445F1B311F620056CFD1 /* FolderCoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FolderCoverView.h; sourceTree = "<group>"; };
+		013C44601B311F620056CFD1 /* FolderCoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FolderCoverView.m; sourceTree = "<group>"; };
+		013C44611B311F620056CFD1 /* UIFolderTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFolderTableView.h; sourceTree = "<group>"; };
+		013C44621B311F620056CFD1 /* UIFolderTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFolderTableView.m; sourceTree = "<group>"; };
+		013C44631B311F620056CFD1 /* UIView+screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+screenshot.h"; sourceTree = "<group>"; };
+		013C44641B311F620056CFD1 /* UIView+screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+screenshot.m"; sourceTree = "<group>"; };
+		013C446D1B312CD30056CFD1 /* SubCateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubCateViewController.h; sourceTree = "<group>"; };
+		013C446E1B312CD30056CFD1 /* SubCateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubCateViewController.m; sourceTree = "<group>"; };
+		013C446F1B312CD30056CFD1 /* SubCateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubCateViewController.xib; sourceTree = "<group>"; };
+		013C44721B312DD80056CFD1 /* CateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CateTableViewCell.h; sourceTree = "<group>"; };
+		013C44731B312DD80056CFD1 /* CateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CateTableViewCell.m; sourceTree = "<group>"; };
+		013C44741B312DD80056CFD1 /* CateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CateTableViewCell.xib; sourceTree = "<group>"; };
+		013C44771B31333A0056CFD1 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		013C44791B3133440056CFD1 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		013C447B1B31334E0056CFD1 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		013C447D1B3133600056CFD1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		013C44831B3136580056CFD1 /* back_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_arrow@2x.png"; sourceTree = "<group>"; };
+		013C44851B31406B0056CFD1 /* UIBarButtonItem+Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Factory.h"; sourceTree = "<group>"; };
+		013C44861B31406B0056CFD1 /* UIBarButtonItem+Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Factory.m"; sourceTree = "<group>"; };
+		013C44881B3140CA0056CFD1 /* UIView+Sizes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Sizes.h"; sourceTree = "<group>"; };
+		013C44891B3140CA0056CFD1 /* UIView+Sizes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Sizes.m"; sourceTree = "<group>"; };
+		013C448B1B31431D0056CFD1 /* 单选-icon96x96-默认@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "单选-icon96x96-默认@2x.png"; sourceTree = "<group>"; };
+		013C448C1B31431D0056CFD1 /* 单选-icon96x96-选中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "单选-icon96x96-选中@2x.png"; sourceTree = "<group>"; };
+		013C44901B3146D70056CFD1 /* SelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectViewController.h; sourceTree = "<group>"; };
+		013C44911B3146D70056CFD1 /* SelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectViewController.m; sourceTree = "<group>"; };
+		013C44921B3146D70056CFD1 /* SelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectViewController.xib; sourceTree = "<group>"; };
+		013C44951B31491E0056CFD1 /* GroupTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupTableViewCell.h; sourceTree = "<group>"; };
+		013C44961B31491E0056CFD1 /* GroupTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupTableViewCell.m; sourceTree = "<group>"; };
+		013C44971B31491E0056CFD1 /* GroupTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupTableViewCell.xib; sourceTree = "<group>"; };
+		013C449A1B31492F0056CFD1 /* ProjectTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectTableViewCell.h; sourceTree = "<group>"; };
+		013C449B1B31492F0056CFD1 /* ProjectTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectTableViewCell.m; sourceTree = "<group>"; };
+		013C449C1B31492F0056CFD1 /* ProjectTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectTableViewCell.xib; sourceTree = "<group>"; };
 		015083CD1B2EB65B00028FC0 /* reservation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reservation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		015083D11B2EB65B00028FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		015083D21B2EB65B00028FC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -193,6 +255,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				013C44811B3133880056CFD1 /* CoreMedia.framework in Frameworks */,
+				013C44801B31337C0056CFD1 /* CoreVideo.framework in Frameworks */,
+				013C447F1B3133720056CFD1 /* MediaPlayer.framework in Frameworks */,
+				013C447E1B3133600056CFD1 /* AVFoundation.framework in Frameworks */,
+				013BC0751B2FF9B800155EAB /* libstdc++.dylib in Frameworks */,
 				013BC03F1B2FC6FC00155EAB /* libz.dylib in Frameworks */,
 				013BC03D1B2FC6E500155EAB /* libiconv.dylib in Frameworks */,
 				0150846C1B2EBE5500028FC0 /* QuartzCore.framework in Frameworks */,
@@ -299,6 +366,12 @@
 				013BC0421B2FC73A00155EAB /* BindViewController.h */,
 				013BC0431B2FC73A00155EAB /* BindViewController.m */,
 				013BC0441B2FC73A00155EAB /* BindViewController.xib */,
+				013C44721B312DD80056CFD1 /* CateTableViewCell.h */,
+				013C44731B312DD80056CFD1 /* CateTableViewCell.m */,
+				013C44741B312DD80056CFD1 /* CateTableViewCell.xib */,
+				013C446D1B312CD30056CFD1 /* SubCateViewController.h */,
+				013C446E1B312CD30056CFD1 /* SubCateViewController.m */,
+				013C446F1B312CD30056CFD1 /* SubCateViewController.xib */,
 			);
 			path = "绑定用户";
 			sourceTree = "<group>";
@@ -313,9 +386,64 @@
 			path = "课表";
 			sourceTree = "<group>";
 		};
+		013C44571B311D0B0056CFD1 /* UPStackMenu */ = {
+			isa = PBXGroup;
+			children = (
+				013C44581B311D0B0056CFD1 /* UPStackMenu.h */,
+				013C44591B311D0B0056CFD1 /* UPStackMenu.m */,
+				013C445A1B311D0B0056CFD1 /* UPStackMenuItem.h */,
+				013C445B1B311D0B0056CFD1 /* UPStackMenuItem.m */,
+			);
+			path = UPStackMenu;
+			sourceTree = "<group>";
+		};
+		013C445E1B311F620056CFD1 /* Floder */ = {
+			isa = PBXGroup;
+			children = (
+				013C445F1B311F620056CFD1 /* FolderCoverView.h */,
+				013C44601B311F620056CFD1 /* FolderCoverView.m */,
+				013C44611B311F620056CFD1 /* UIFolderTableView.h */,
+				013C44621B311F620056CFD1 /* UIFolderTableView.m */,
+				013C44631B311F620056CFD1 /* UIView+screenshot.h */,
+				013C44641B311F620056CFD1 /* UIView+screenshot.m */,
+			);
+			path = Floder;
+			sourceTree = "<group>";
+		};
+		013C44821B3136580056CFD1 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				013C44831B3136580056CFD1 /* back_arrow@2x.png */,
+				013C448B1B31431D0056CFD1 /* 单选-icon96x96-默认@2x.png */,
+				013C448C1B31431D0056CFD1 /* 单选-icon96x96-选中@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		013C448F1B3146C00056CFD1 /* 扫描 */ = {
+			isa = PBXGroup;
+			children = (
+				013C44901B3146D70056CFD1 /* SelectViewController.h */,
+				013C44911B3146D70056CFD1 /* SelectViewController.m */,
+				013C44921B3146D70056CFD1 /* SelectViewController.xib */,
+				013C44951B31491E0056CFD1 /* GroupTableViewCell.h */,
+				013C44961B31491E0056CFD1 /* GroupTableViewCell.m */,
+				013C44971B31491E0056CFD1 /* GroupTableViewCell.xib */,
+				013C449A1B31492F0056CFD1 /* ProjectTableViewCell.h */,
+				013C449B1B31492F0056CFD1 /* ProjectTableViewCell.m */,
+				013C449C1B31492F0056CFD1 /* ProjectTableViewCell.xib */,
+			);
+			path = "扫描";
+			sourceTree = "<group>";
+		};
 		015083C41B2EB65B00028FC0 = {
 			isa = PBXGroup;
 			children = (
+				013C447D1B3133600056CFD1 /* AVFoundation.framework */,
+				013C447B1B31334E0056CFD1 /* MediaPlayer.framework */,
+				013C44791B3133440056CFD1 /* CoreVideo.framework */,
+				013C44771B31333A0056CFD1 /* CoreMedia.framework */,
+				013BC0741B2FF9B800155EAB /* libstdc++.dylib */,
 				013BC03E1B2FC6FC00155EAB /* libz.dylib */,
 				013BC03C1B2FC6E500155EAB /* libiconv.dylib */,
 				015083CF1B2EB65B00028FC0 /* reservation */,
@@ -346,6 +474,7 @@
 		015083CF1B2EB65B00028FC0 /* reservation */ = {
 			isa = PBXGroup;
 			children = (
+				013C44821B3136580056CFD1 /* images */,
 				015084081B2EBC6100028FC0 /* third */,
 				015084041B2EBB3900028FC0 /* Helper */,
 				015083FD1B2EBA8D00028FC0 /* controllers */,
@@ -391,6 +520,7 @@
 		015083FD1B2EBA8D00028FC0 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				013C448F1B3146C00056CFD1 /* 扫描 */,
 				013BC0471B2FC7A700155EAB /* 课表 */,
 				013BC0411B2FC72F00155EAB /* 绑定用户 */,
 				013BC0361B2FC60400155EAB /* 认证用户list */,
@@ -412,6 +542,10 @@
 		015084041B2EBB3900028FC0 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				013C44881B3140CA0056CFD1 /* UIView+Sizes.h */,
+				013C44891B3140CA0056CFD1 /* UIView+Sizes.m */,
+				013C44851B31406B0056CFD1 /* UIBarButtonItem+Factory.h */,
+				013C44861B31406B0056CFD1 /* UIBarButtonItem+Factory.m */,
 				015084051B2EBB3F00028FC0 /* UIViewController+BackBar.h */,
 				015084061B2EBB3F00028FC0 /* UIViewController+BackBar.m */,
 			);
@@ -421,6 +555,8 @@
 		015084081B2EBC6100028FC0 /* third */ = {
 			isa = PBXGroup;
 			children = (
+				013C445E1B311F620056CFD1 /* Floder */,
+				013C44571B311D0B0056CFD1 /* UPStackMenu */,
 				013BC00D1B2FBC8300155EAB /* ZBarSDK */,
 				015084501B2EBD9000028FC0 /* SVProgressHUD */,
 				015084091B2EBC7200028FC0 /* AFNetworking */,
@@ -586,15 +722,23 @@
 				015083DC1B2EB65B00028FC0 /* Main.storyboard in Resources */,
 				015084571B2EBD9000028FC0 /* SVProgressHUD.bundle in Resources */,
 				013BC02C1B2FBC8300155EAB /* zbar-back.png in Resources */,
+				013C448D1B31431D0056CFD1 /* 单选-icon96x96-默认@2x.png in Resources */,
 				015083E11B2EB65B00028FC0 /* LaunchScreen.xib in Resources */,
+				013C448E1B31431D0056CFD1 /* 单选-icon96x96-选中@2x.png in Resources */,
 				013BC04C1B2FC7B600155EAB /* TimeTableViewController.xib in Resources */,
+				013C44941B3146D70056CFD1 /* SelectViewController.xib in Resources */,
 				015083DE1B2EB65B00028FC0 /* Images.xcassets in Resources */,
+				013C44761B312DD80056CFD1 /* CateTableViewCell.xib in Resources */,
 				013BC03B1B2FC61500155EAB /* UserListViewController.xib in Resources */,
+				013C44991B31491E0056CFD1 /* GroupTableViewCell.xib in Resources */,
+				013C44711B312CD30056CFD1 /* SubCateViewController.xib in Resources */,
 				015084031B2EBA9F00028FC0 /* FirstViewController.xib in Resources */,
 				013BC02F1B2FBC8300155EAB /* zbar-samples.png in Resources */,
 				013BC02D1B2FBC8300155EAB /* zbar-help.html in Resources */,
+				013C44841B3136580056CFD1 /* back_arrow@2x.png in Resources */,
 				015084401B2EBC7200028FC0 /* LICENSE in Resources */,
 				013BC02E1B2FBC8300155EAB /* zbar-helpicons.png in Resources */,
+				013C449E1B31492F0056CFD1 /* ProjectTableViewCell.xib in Resources */,
 				013BC0461B2FC73A00155EAB /* BindViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -615,15 +759,21 @@
 			files = (
 				015084561B2EBD9000028FC0 /* SVIndefiniteAnimatedView.m in Sources */,
 				0150843C1B2EBC7200028FC0 /* AFURLConnectionOperation.m in Sources */,
+				013C44751B312DD80056CFD1 /* CateTableViewCell.m in Sources */,
+				013C44651B311F620056CFD1 /* FolderCoverView.m in Sources */,
 				013BC03A1B2FC61500155EAB /* UserListViewController.m in Sources */,
+				013C448A1B3140CA0056CFD1 /* UIView+Sizes.m in Sources */,
 				015084371B2EBC7200028FC0 /* AFHTTPRequestOperation.m in Sources */,
 				0150843A1B2EBC7200028FC0 /* AFNetworkReachabilityManager.m in Sources */,
 				0150844F1B2EBCB900028FC0 /* NNManager.m in Sources */,
+				013C44931B3146D70056CFD1 /* SelectViewController.m in Sources */,
 				0150843F1B2EBC7200028FC0 /* AFURLSessionManager.m in Sources */,
 				015084421B2EBC7200028FC0 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				0150843D1B2EBC7200028FC0 /* AFURLRequestSerialization.m in Sources */,
 				015084071B2EBB3F00028FC0 /* UIViewController+BackBar.m in Sources */,
 				015084581B2EBD9000028FC0 /* SVProgressHUD.m in Sources */,
+				013C44981B31491E0056CFD1 /* GroupTableViewCell.m in Sources */,
+				013C445D1B311D0B0056CFD1 /* UPStackMenuItem.m in Sources */,
 				015084471B2EBC7200028FC0 /* UIProgressView+AFNetworking.m in Sources */,
 				0150843E1B2EBC7200028FC0 /* AFURLResponseSerialization.m in Sources */,
 				015083D91B2EB65B00028FC0 /* ViewController.m in Sources */,
@@ -631,14 +781,20 @@
 				015083D61B2EB65B00028FC0 /* AppDelegate.m in Sources */,
 				015084451B2EBC7200028FC0 /* UIButton+AFNetworking.m in Sources */,
 				015084461B2EBC7200028FC0 /* UIImageView+AFNetworking.m in Sources */,
+				013C445C1B311D0B0056CFD1 /* UPStackMenu.m in Sources */,
 				015084381B2EBC7200028FC0 /* AFHTTPRequestOperationManager.m in Sources */,
 				0150843B1B2EBC7200028FC0 /* AFSecurityPolicy.m in Sources */,
 				015084441B2EBC7200028FC0 /* UIAlertView+AFNetworking.m in Sources */,
+				013C44701B312CD30056CFD1 /* SubCateViewController.m in Sources */,
+				013C449D1B31492F0056CFD1 /* ProjectTableViewCell.m in Sources */,
+				013C44671B311F620056CFD1 /* UIView+screenshot.m in Sources */,
 				015084491B2EBC7200028FC0 /* UIWebView+AFNetworking.m in Sources */,
 				015084431B2EBC7200028FC0 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				015083D31B2EB65B00028FC0 /* main.m in Sources */,
+				013C44871B31406B0056CFD1 /* UIBarButtonItem+Factory.m in Sources */,
 				015084481B2EBC7200028FC0 /* UIRefreshControl+AFNetworking.m in Sources */,
 				015084411B2EBC7200028FC0 /* README.md in Sources */,
+				013C44661B311F620056CFD1 /* UIFolderTableView.m in Sources */,
 				015084021B2EBA9F00028FC0 /* FirstViewController.m in Sources */,
 				015084391B2EBC7200028FC0 /* AFHTTPSessionManager.m in Sources */,
 				013BC0451B2FC73A00155EAB /* BindViewController.m in Sources */,
@@ -763,6 +919,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: jun zhao (9YJF6YCZXZ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/reservation/PrefixHeader.pch";
 				INFOPLIST_FILE = reservation/Info.plist;
@@ -773,6 +930,7 @@
 					"$(PROJECT_DIR)/reservation/third/ZBarSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "578f152d-b3bf-4255-ba89-2cd136296005";
 			};
 			name = Debug;
 		};
@@ -780,6 +938,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: jun zhao (9YJF6YCZXZ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/reservation/PrefixHeader.pch";
 				INFOPLIST_FILE = reservation/Info.plist;
@@ -790,6 +949,7 @@
 					"$(PROJECT_DIR)/reservation/third/ZBarSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "578f152d-b3bf-4255-ba89-2cd136296005";
 			};
 			name = Release;
 		};
