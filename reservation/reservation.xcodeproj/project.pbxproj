@@ -45,11 +45,11 @@
 		013C44991B31491E0056CFD1 /* GroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 013C44971B31491E0056CFD1 /* GroupTableViewCell.xib */; };
 		013C449D1B31492F0056CFD1 /* ProjectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C449B1B31492F0056CFD1 /* ProjectTableViewCell.m */; };
 		013C449E1B31492F0056CFD1 /* ProjectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 013C449C1B31492F0056CFD1 /* ProjectTableViewCell.xib */; };
-		013C44AE1B3154E60056CFD1 /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44A21B3154E60056CFD1 /* EGOCache.m */; };
-		013C44AF1B3154E60056CFD1 /* EGOImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44A51B3154E60056CFD1 /* EGOImageButton.m */; };
-		013C44B01B3154E60056CFD1 /* EGOImageLoadConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44A81B3154E60056CFD1 /* EGOImageLoadConnection.m */; };
-		013C44B11B3154E60056CFD1 /* EGOImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44AA1B3154E60056CFD1 /* EGOImageLoader.m */; };
-		013C44B21B3154E60056CFD1 /* EGOImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44AD1B3154E60056CFD1 /* EGOImageView.m */; };
+		013C44AE1B3154E60056CFD1 /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44A21B3154E60056CFD1 /* EGOCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		013C44AF1B3154E60056CFD1 /* EGOImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44A51B3154E60056CFD1 /* EGOImageButton.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		013C44B01B3154E60056CFD1 /* EGOImageLoadConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44A81B3154E60056CFD1 /* EGOImageLoadConnection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		013C44B11B3154E60056CFD1 /* EGOImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44AA1B3154E60056CFD1 /* EGOImageLoader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		013C44B21B3154E60056CFD1 /* EGOImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44AD1B3154E60056CFD1 /* EGOImageView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		015083D31B2EB65B00028FC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 015083D21B2EB65B00028FC0 /* main.m */; };
 		015083D61B2EB65B00028FC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 015083D51B2EB65B00028FC0 /* AppDelegate.m */; };
 		015083D91B2EB65B00028FC0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015083D81B2EB65B00028FC0 /* ViewController.m */; };
@@ -503,20 +503,20 @@
 		015083C41B2EB65B00028FC0 = {
 			isa = PBXGroup;
 			children = (
+				015083CF1B2EB65B00028FC0 /* reservation */,
 				013C447D1B3133600056CFD1 /* AVFoundation.framework */,
 				013C447B1B31334E0056CFD1 /* MediaPlayer.framework */,
 				013C44791B3133440056CFD1 /* CoreVideo.framework */,
 				013C44771B31333A0056CFD1 /* CoreMedia.framework */,
-				013BC0741B2FF9B800155EAB /* libstdc++.dylib */,
-				013BC03E1B2FC6FC00155EAB /* libz.dylib */,
-				013BC03C1B2FC6E500155EAB /* libiconv.dylib */,
-				015083CF1B2EB65B00028FC0 /* reservation */,
 				0150846B1B2EBE5500028FC0 /* QuartzCore.framework */,
 				015084691B2EBE4700028FC0 /* SystemConfiguration.framework */,
 				015084671B2EBE3700028FC0 /* CoreGraphics.framework */,
 				015084651B2EBE3000028FC0 /* UIKit.framework */,
 				015084631B2EBE2C00028FC0 /* Foundation.framework */,
 				015084611B2EBE2300028FC0 /* libxml2.dylib */,
+				013BC0741B2FF9B800155EAB /* libstdc++.dylib */,
+				013BC03E1B2FC6FC00155EAB /* libz.dylib */,
+				013BC03C1B2FC6E500155EAB /* libiconv.dylib */,
 				0150845F1B2EBE1700028FC0 /* CoreTelephony.framework */,
 				0150845D1B2EBE1100028FC0 /* Security.framework */,
 				0150845B1B2EBDF700028FC0 /* MobileCoreServices.framework */,
