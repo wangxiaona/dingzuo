@@ -152,8 +152,9 @@
         }
     }
 //    添加自定义
+    [self.scanView setFrame:self.view.frame];
     [reader.view addSubview:self.scanView];
-    [reader.view setFrame:self.view.frame];
+//    [reader.view setFrame:self.view.frame];
     
 }
 

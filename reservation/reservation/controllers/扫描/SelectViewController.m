@@ -21,7 +21,7 @@
     // Do any additional setup after loading the view from its nib.
     [self setCustomizeBackBar];
     self.tableViewList = [NSMutableArray arrayWithCapacity:0];
-    
+    [[NNSingleton sharedSingleton] setExtraCellLineHidden:self.tableView];
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {

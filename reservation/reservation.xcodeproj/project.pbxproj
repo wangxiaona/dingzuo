@@ -50,6 +50,7 @@
 		013C44B01B3154E60056CFD1 /* EGOImageLoadConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44A81B3154E60056CFD1 /* EGOImageLoadConnection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		013C44B11B3154E60056CFD1 /* EGOImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44AA1B3154E60056CFD1 /* EGOImageLoader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		013C44B21B3154E60056CFD1 /* EGOImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44AD1B3154E60056CFD1 /* EGOImageView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		013C44B51B31570C0056CFD1 /* NNSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44B41B31570C0056CFD1 /* NNSingleton.m */; };
 		015083D31B2EB65B00028FC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 015083D21B2EB65B00028FC0 /* main.m */; };
 		015083D61B2EB65B00028FC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 015083D51B2EB65B00028FC0 /* AppDelegate.m */; };
 		015083D91B2EB65B00028FC0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015083D81B2EB65B00028FC0 /* ViewController.m */; };
@@ -189,6 +190,8 @@
 		013C44AA1B3154E60056CFD1 /* EGOImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageLoader.m; sourceTree = "<group>"; };
 		013C44AC1B3154E60056CFD1 /* EGOImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageView.h; sourceTree = "<group>"; };
 		013C44AD1B3154E60056CFD1 /* EGOImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageView.m; sourceTree = "<group>"; };
+		013C44B31B31570C0056CFD1 /* NNSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNSingleton.h; sourceTree = "<group>"; };
+		013C44B41B31570C0056CFD1 /* NNSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNSingleton.m; sourceTree = "<group>"; };
 		015083CD1B2EB65B00028FC0 /* reservation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reservation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		015083D11B2EB65B00028FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		015083D21B2EB65B00028FC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -544,6 +547,8 @@
 				015083FD1B2EBA8D00028FC0 /* controllers */,
 				015083D41B2EB65B00028FC0 /* AppDelegate.h */,
 				015083D51B2EB65B00028FC0 /* AppDelegate.m */,
+				013C44B31B31570C0056CFD1 /* NNSingleton.h */,
+				013C44B41B31570C0056CFD1 /* NNSingleton.m */,
 				015083D71B2EB65B00028FC0 /* ViewController.h */,
 				015083D81B2EB65B00028FC0 /* ViewController.m */,
 				015083DA1B2EB65B00028FC0 /* Main.storyboard */,
@@ -861,6 +866,7 @@
 				015084431B2EBC7200028FC0 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				015083D31B2EB65B00028FC0 /* main.m in Sources */,
 				013C44871B31406B0056CFD1 /* UIBarButtonItem+Factory.m in Sources */,
+				013C44B51B31570C0056CFD1 /* NNSingleton.m in Sources */,
 				015084481B2EBC7200028FC0 /* UIRefreshControl+AFNetworking.m in Sources */,
 				015084411B2EBC7200028FC0 /* README.md in Sources */,
 				013C44661B311F620056CFD1 /* UIFolderTableView.m in Sources */,
