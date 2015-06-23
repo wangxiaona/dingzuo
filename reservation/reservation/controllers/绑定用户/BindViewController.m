@@ -25,7 +25,7 @@
     
     [self setCustomizeBackBar];
     
-    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTitle:@"绑定" target:self action:@selector(bangdingPressed:)];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTitle:@"登录" target:self action:@selector(bangdingPressed:)];
     
     self.type = @{@"title":@"会员编号",@"keyword":@"memberId"};
     
@@ -63,34 +63,30 @@
     switch (indexPath.row) {
         case 0:
         {
-            cell.label1.text = @"身份认证类型";
-            cell.textField1.userInteractionEnabled = NO;
-            cell.textField1.text = self.type[@"title"];
-            cell.textField1.placeholder = [NSString stringWithFormat:@"请选择%@",cell.label1.text];
+            cell.label1.text = @"会员编号";
+            cell.label1.text = self.type[@"title"];
+            cell.textField1.text = self.verifyTypeNum;
         }
             break;
             
         case 1:
         {
             cell.label1.text = @"身份认证编号";
-            cell.textField1.userInteractionEnabled = YES;
             cell.textField1.text = self.verifyNum;
-            cell.textField1.placeholder = [NSString stringWithFormat:@"请填写%@",cell.label1.text];
         }
             break;
             
         case 2:
         {
             cell.label1.text = @"会馆编号";
-            cell.textField1.userInteractionEnabled = YES;
             cell.textField1.text = self.huiguanNum;
-            cell.textField1.placeholder = [NSString stringWithFormat:@"请填写%@",cell.label1.text];
         }
             break;
             
         default:
             break;
     }
+    cell.textField1.placeholder = [NSString stringWithFormat:@"请填写%@",cell.label1.text];
     [cell.textField1 setDelegate:self];
     
     

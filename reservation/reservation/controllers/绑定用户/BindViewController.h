@@ -13,6 +13,7 @@
 @property (strong, nonatomic) NSDictionary *type;
 @property (strong, nonatomic) NSString *verifyNum;
 @property (strong, nonatomic) NSString *huiguanNum;
+@property (strong, nonatomic) NSString *verifyTypeNum;
 @property (strong, nonatomic) IBOutlet UIFolderTableView *tableView;
 -(void)subCateBtnAction:(UIButton *)btn;
 @end
