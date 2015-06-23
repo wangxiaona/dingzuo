@@ -116,6 +116,8 @@
 		01668E4A1B391FC200136D5F /* title_icon_add_def@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01668E341B391FC200136D5F /* title_icon_add_def@3x.png */; };
 		01668E4B1B391FC200136D5F /* WechatCard_set_icon_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01668E351B391FC200136D5F /* WechatCard_set_icon_add@2x.png */; };
 		01668E4C1B391FC200136D5F /* WechatCard_set_icon_add@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01668E361B391FC200136D5F /* WechatCard_set_icon_add@3x.png */; };
+		01668E501B39300900136D5F /* UserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01668E4E1B39300900136D5F /* UserTableViewCell.m */; };
+		01668E511B39300900136D5F /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01668E4F1B39300900136D5F /* UserTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -310,6 +312,9 @@
 		01668E341B391FC200136D5F /* title_icon_add_def@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title_icon_add_def@3x.png"; sourceTree = "<group>"; };
 		01668E351B391FC200136D5F /* WechatCard_set_icon_add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WechatCard_set_icon_add@2x.png"; sourceTree = "<group>"; };
 		01668E361B391FC200136D5F /* WechatCard_set_icon_add@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WechatCard_set_icon_add@3x.png"; sourceTree = "<group>"; };
+		01668E4D1B39300900136D5F /* UserTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTableViewCell.h; sourceTree = "<group>"; };
+		01668E4E1B39300900136D5F /* UserTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTableViewCell.m; sourceTree = "<group>"; };
+		01668E4F1B39300900136D5F /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -418,6 +423,9 @@
 				013BC0371B2FC61500155EAB /* UserListViewController.h */,
 				013BC0381B2FC61500155EAB /* UserListViewController.m */,
 				013BC0391B2FC61500155EAB /* UserListViewController.xib */,
+				01668E4D1B39300900136D5F /* UserTableViewCell.h */,
+				01668E4E1B39300900136D5F /* UserTableViewCell.m */,
+				01668E4F1B39300900136D5F /* UserTableViewCell.xib */,
 			);
 			path = "认证用户list";
 			sourceTree = "<group>";
@@ -887,6 +895,7 @@
 				015084031B2EBA9F00028FC0 /* FirstViewController.xib in Resources */,
 				01668E3D1B391FC200136D5F /* QQPimSyncViewFlowBackgroundImage@2x.jpg in Resources */,
 				01668E411B391FC200136D5F /* QQPimSyncViewMore_normal@2x.png in Resources */,
+				01668E511B39300900136D5F /* UserTableViewCell.xib in Resources */,
 				013BC02F1B2FBC8300155EAB /* zbar-samples.png in Resources */,
 				01668E421B391FC200136D5F /* QQPimSyncViewMore_normal@3x.png in Resources */,
 				013BC02D1B2FBC8300155EAB /* zbar-help.html in Resources */,
@@ -947,6 +956,7 @@
 				013C44B11B3154E60056CFD1 /* EGOImageLoader.m in Sources */,
 				015084441B2EBC7200028FC0 /* UIAlertView+AFNetworking.m in Sources */,
 				013C44701B312CD30056CFD1 /* SubCateViewController.m in Sources */,
+				01668E501B39300900136D5F /* UserTableViewCell.m in Sources */,
 				013C44B21B3154E60056CFD1 /* EGOImageView.m in Sources */,
 				013C449D1B31492F0056CFD1 /* ProjectTableViewCell.m in Sources */,
 				013C44671B311F620056CFD1 /* UIView+screenshot.m in Sources */,

@@ -7,9 +7,11 @@
 //
 
 #import "UserListViewController.h"
+#import "UserTableViewCell.h"
 
-@interface UserListViewController ()
-
+@interface UserListViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property(strong,nonatomic)IBOutlet UITableView *tableView;
+@property(strong,nonatomic)NSMutableArray *tableViewList;
 @end
 
 @implementation UserListViewController
@@ -22,6 +24,38 @@
     [self setCustomizeBackBar];
     
 }
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *cellIdentifier = @"userlistCell";
+    UserTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
+    if (cell == nil) {
+        
+        NSArray *array = [[NSBundle mainBundle] loadNibNamed:@"UserTableViewCell" owner:self options:nil];
+        cell = [array objectAtIndex:0];
+        cell.selectionStyle = UITableViewCellSelectionStyleGray;
+        
+    }
+    cell.titleLabel.text = @"test";
+    return cell;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60;
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.tableViewList.count;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
