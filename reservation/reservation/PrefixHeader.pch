@@ -25,5 +25,5 @@
 
 
 
-#define API_NN @"http://www.baidu.com"
+#define API_NN @"http://121.42.10.224:8080/yoga2015"
 #define BASE_URL [NSURL URLWithString:API_NN]

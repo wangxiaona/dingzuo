@@ -30,14 +30,29 @@
     self.type = @{@"title":@"会员编号",@"keyword":@"memberId"};
     
     subVc = [[SubCateViewController alloc]
-                                    initWithNibName:NSStringFromClass([SubCateViewController class])
-                                    bundle:nil];
+             initWithNibName:NSStringFromClass([SubCateViewController class])
+             bundle:nil];
     subVc.bindVc = self;
     [self.tableView setSeparatorInset:UIEdgeInsetsZero];
 }
 -(void)bangdingPressed:(UIBarButtonItem *)sender
 {
     NSLog(@"bangdingPressed");
+    
+    if(!self.verifyTypeNum.length)
+    {
+        [SVProgressHUD showErrorWithStatus:@""];
+        return;
+    }else if(!self.verifyNum.length)
+    {
+        [SVProgressHUD showErrorWithStatus:@""];
+        return;
+    }else if(!self.huiguanNum.length)
+    {
+        [SVProgressHUD showErrorWithStatus:@""];
+        return;
+    }
+    
 }
 
 #pragma mark - Table view data source
@@ -97,8 +112,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-   if(indexPath.row != 0)
-       return;
+    if(indexPath.row != 0)
+        return;
     
     self.tableView.scrollEnabled = NO;
     UIFolderTableView *folderTableView = (UIFolderTableView *)tableView;
@@ -175,13 +190,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
