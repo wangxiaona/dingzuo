@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "UIFolderTableView.h"
 
-@interface BindViewController : UIViewController<UITableViewDataSource, UITableViewDelegate,UITextFieldDelegate>
+@interface BindViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) NSDictionary *type;
 @property (strong, nonatomic) NSString *verifyNum;
 @property (strong, nonatomic) NSString *huiguanNum;

@@ -216,6 +216,8 @@
 		013C44AD1B3154E60056CFD1 /* EGOImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageView.m; sourceTree = "<group>"; };
 		013C44B31B31570C0056CFD1 /* NNSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNSingleton.h; sourceTree = "<group>"; };
 		013C44B41B31570C0056CFD1 /* NNSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNSingleton.m; sourceTree = "<group>"; };
+		013E72211B3CF5980033DFED /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		013E72221B3CF5980033DFED /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		015083CD1B2EB65B00028FC0 /* reservation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reservation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		015083D11B2EB65B00028FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		015083D21B2EB65B00028FC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -998,6 +1000,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				015083DB1B2EB65B00028FC0 /* Base */,
+				013E72211B3CF5980033DFED /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1006,6 +1009,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				015083E01B2EB65B00028FC0 /* Base */,
+				013E72221B3CF5980033DFED /* zh-Hans */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";

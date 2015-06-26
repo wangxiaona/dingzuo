@@ -10,6 +10,8 @@
 
 @interface NNSingleton : NSObject
 
+-(void)saveUserId:(NSString *)dic;
+-(NSString *)readUserId;
 + (NNSingleton *)sharedSingleton;
 - (void)setExtraCellLineHidden: (UITableView *)tableView;
 @end

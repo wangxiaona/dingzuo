@@ -24,7 +24,11 @@
     [self setCustomizeBackBar];
     
 }
-
+-(void)viewWillAppear:(BOOL)animated
+{
+    
+    self.navigationController.navigationBarHidden = NO;
+}
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;

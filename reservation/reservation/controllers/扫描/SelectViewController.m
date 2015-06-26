@@ -23,25 +23,22 @@
     self.tableViewList = [NSMutableArray arrayWithCapacity:0];
     [[NNSingleton sharedSingleton] setExtraCellLineHidden:self.tableView];
 }
+-(void)viewWillAppear:(BOOL)animated
+{
+    
+    self.navigationController.navigationBarHidden = NO;
+}
+-(void)viewWillDisappear:(BOOL)animated
+{
+    
+    self.navigationController.navigationBarHidden = YES;
+}
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    products数组中对象的值包含以下属性：
-//    id						--->编号
-//    product.name        	--->名称
-//    remainValidMoney   		--->剩余余额
-//    remainUseTimes			--->剩余次数
-//    remainValidTime			--->剩余时间
-//    
-//    groups数组中对象的值包含以下属性：
-//    id						--->编号
-//    groupNo					--->字符串类型编号
-//    name					--->名称
-//    manager					--->负责人
-    
     NSDictionary *dic = self.tableViewList[indexPath.row];
     switch (self.type_n) {
         case YES:

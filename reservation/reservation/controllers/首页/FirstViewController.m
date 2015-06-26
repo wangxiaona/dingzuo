@@ -27,11 +27,9 @@
 @implementation FirstViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
     [self.view setFrame:[UIScreen mainScreen].bounds];
-    
     [self.scrollView setContentSize:CGSizeMake(self.view.frame.size.width, 568)];
     self.pointView.layer.cornerRadius = 4.0f;
     self.pointView.layer.masksToBounds = YES;
@@ -40,7 +38,13 @@
     bindController = [[BindViewController alloc] initWithNibName:@"BindViewController" bundle:nil];
     timetableController = [[TimeTableViewController alloc] initWithNibName:@"TimeTableViewController" bundle:nil];
     selectViewController = [[SelectViewController alloc] initWithNibName:@"SelectViewController" bundle:nil];
+    [super viewDidLoad];
     
+}
+-(void)viewWillAppear:(BOOL)animated
+{
+    self.navigationController.navigationBarHidden = YES;
+    [super viewWillAppear:animated];
 }
 - (IBAction)verifyListButtonPressed:(id)sender {
     [self.navigationController pushViewController:userListController animated:YES];
@@ -54,8 +58,8 @@
     ZBarReaderViewController *reader = [ZBarReaderViewController new];
     reader.readerDelegate = self;
     reader.supportedOrientationsMask = ZBarOrientationMaskAll;
-    reader.scanCrop = CGRectMake(0.1, 0.2, 0.8, 0.8);
     reader.showsZBarControls=NO;
+    reader.scanCrop = CGRectMake(0.1, 0.2, 0.8, 0.8);
     
     [self setOverlayPickerView:reader];
     
@@ -65,16 +69,47 @@
                    config: ZBAR_CFG_ENABLE
                        to: 0];
     
-    if(self.timer == nil)
-    {
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(animations_nn) userInfo:nil repeats:YES];
-    }
-    else
-        [self.timer setFireDate:[NSDate date]];
+//    if(self.timer == nil)
+//    {
+//        self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(animations_nn) userInfo:nil repeats:YES];
+//    }
+//    else
+//        [self.timer setFireDate:[NSDate date]];
    
     
+    [self presentViewController:reader animated:YES completion:nil];
+    
+    
+}
+-(void)animations_nn
+{
+    self.pointView.hidden  = self.pointView.hidden?NO:YES;
+}
+
+- (IBAction)timetableButtonPressed:(id)sender {
+//    [self.navigationController pushViewController:timetableController animated:YES];
+}
+-(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    
+    [self dismissModalViewControllerAnimated: YES];
+}
+- (void) imagePickerController: (UIImagePickerController*) reader
+ didFinishPickingMediaWithInfo: (NSDictionary*) info
+{
+    id<NSFastEnumeration> results =
+    [info objectForKey: ZBarReaderControllerResults];
+    ZBarSymbol *symbol = nil;
+    for(symbol in results)
+        break;
+    [reader dismissViewControllerAnimated:YES completion:nil];
+    NSString *string = symbol.data;
+    NSLog(@"%@",string);
+    
     [SVProgressHUD showWithStatus:@"加载中"];
-    NSString * api = [API_NN stringByAppendingString:@""];
+    NSString *string_memberid = [[NNSingleton sharedSingleton] readUserId];
+    NSString * api = [string stringByAppendingString:string_memberid];
+    NSLog(@"%@",api);
     [[NNManager sharedInterface]GET:api parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         [SVProgressHUD dismiss];
@@ -90,7 +125,6 @@
                 selectViewController.tableViewList = responseObject[@"groups"];
             }
             [self.navigationController pushViewController:selectViewController animated:NO];
-            [self presentViewController:reader animated:YES completion:nil];
         }
         else
         {
@@ -101,29 +135,6 @@
         [SVProgressHUD showErrorWithStatus:@"失败"];
     }];
 
-    
-    
-}
--(void)animations_nn
-{
-    self.pointView.hidden  = self.pointView.hidden?NO:YES;
-}
-
-- (IBAction)timetableButtonPressed:(id)sender {
-//    [self.navigationController pushViewController:timetableController animated:YES];
-}
-
-- (void) imagePickerController: (UIImagePickerController*) reader
- didFinishPickingMediaWithInfo: (NSDictionary*) info
-{
-    id<NSFastEnumeration> results =
-    [info objectForKey: ZBarReaderControllerResults];
-    ZBarSymbol *symbol = nil;
-    for(symbol in results)
-        break;
-    [reader dismissViewControllerAnimated:YES completion:nil];
-    NSString *string = symbol.data;
-    NSLog(@"%@",string);
     
 }
 
