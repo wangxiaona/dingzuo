@@ -69,12 +69,12 @@
                    config: ZBAR_CFG_ENABLE
                        to: 0];
     
-//    if(self.timer == nil)
-//    {
-//        self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(animations_nn) userInfo:nil repeats:YES];
-//    }
-//    else
-//        [self.timer setFireDate:[NSDate date]];
+    if(self.timer == nil)
+    {
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(animations_nn) userInfo:nil repeats:YES];
+    }
+    else
+        [self.timer setFireDate:[NSDate date]];
    
     
     [self presentViewController:reader animated:YES completion:nil];
@@ -110,8 +110,7 @@
     NSString *string_memberid = [[NNSingleton sharedSingleton] readUserId];
     NSString * api = [string stringByAppendingString:string_memberid];
     NSLog(@"%@",api);
-    [[NNManager sharedInterface]GET:api parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        
+    [[NNManager sharedInterface] POST:api parameters:nil constructingBodyWithBlock:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         [SVProgressHUD dismiss];
         if([responseObject[@"success"]boolValue])
         {
@@ -130,10 +129,33 @@
         {
             [SVProgressHUD showErrorWithStatus:@"失败"];
         }
-        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         [SVProgressHUD showErrorWithStatus:@"失败"];
     }];
+//    [[NNManager sharedInterface]GET:api parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+//        
+//        [SVProgressHUD dismiss];
+//        if([responseObject[@"success"]boolValue])
+//        {
+//            selectViewController.type_n = [responseObject[@"nextStep"] isEqualToString:@"chooseProduct"];
+//            if(selectViewController.type_n)
+//            {
+//                selectViewController.tableViewList = responseObject[@"products"];
+//            }
+//            else
+//            {
+//                selectViewController.tableViewList = responseObject[@"groups"];
+//            }
+//            [self.navigationController pushViewController:selectViewController animated:NO];
+//        }
+//        else
+//        {
+//            [SVProgressHUD showErrorWithStatus:@"失败"];
+//        }
+//        
+//    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//        [SVProgressHUD showErrorWithStatus:@"失败"];
+//    }];
 
     
 }
