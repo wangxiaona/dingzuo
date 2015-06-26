@@ -21,11 +21,17 @@
     // Do any additional setup after loading the view from its nib.
     [self setCustomizeBackBar];
     self.tableViewList = [NSMutableArray arrayWithCapacity:0];
+    
     [[NNSingleton sharedSingleton] setExtraCellLineHidden:self.tableView];
 }
 -(void)viewWillAppear:(BOOL)animated
 {
-    
+    if(self.type_n)
+    {
+        self.title = @"选择产品";
+    }else{
+        self.title = @"选择班级";
+    }
     self.navigationController.navigationBarHidden = NO;
 }
 -(void)viewWillDisappear:(BOOL)animated
@@ -84,7 +90,7 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return self.type_n?150:120;
+    return self.type_n?125:95;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {

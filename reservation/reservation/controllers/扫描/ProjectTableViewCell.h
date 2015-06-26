@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ProjectTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *yueLabel;
+@property (weak, nonatomic) IBOutlet UILabel *cishuLabel;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 
 @end
