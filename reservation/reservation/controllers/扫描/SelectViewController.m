@@ -59,7 +59,10 @@
                 cell.selectionStyle = UITableViewCellSelectionStyleGray;
                 
             }
-            
+            cell.nameLabel.text = dic[@"name"];
+            cell.yueLabel.text = dic[@"remainValidMoney"];
+            cell.cishuLabel.text = dic[@"remainUseTimes"];
+            cell.timeLabel.text = dic[@"name"];
             return cell;
         }
             break;
@@ -74,6 +77,10 @@
                 cell = [array objectAtIndex:0];
                 cell.selectionStyle = UITableViewCellSelectionStyleGray;
                 
+                cell.nameLabel.text = dic[@"name"];
+                cell.fuzerenLabel.text = dic[@"manager"];
+                cell.bianhaoLabel.text = dic[@"groupNo"];
+                
             }
             
             return cell;
@@ -87,6 +94,28 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    NSDictionary *dic = self.tableViewList[indexPath.row];
+    NSString *idString = [NSString stringWithFormat:@"&productRemainingIdOrGroupId=%@",dic[@"id"]];
+    [SVProgressHUD showWithStatus:@"加载中"];
+    NSString *api_string = [NSString stringWithFormat:@"%@/wanyogaAdmin/ajaxMemberReserveOrAttend.rmt%@",API_NN,idString];
+    NSLog(@"%@",api_string);
+    [[NNManager sharedInterface]GET:api_string parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        [SVProgressHUD dismiss];
+        if([responseObject[@"success"]boolValue])
+        {
+            NSString *msgString = [NSString stringWithFormat:@"%@,%@,%@",responseObject[@"msg"],responseObject[@"lession"],responseObject[@"seatNo"]];
+            [SVProgressHUD showSuccessWithStatus:msgString duration:1];
+        }
+        else
+        {
+            [SVProgressHUD showErrorWithStatus:responseObject[@"msg"] duration:1];
+        }
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        [SVProgressHUD showErrorWithStatus:[error description] duration:1];
+    }];
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
