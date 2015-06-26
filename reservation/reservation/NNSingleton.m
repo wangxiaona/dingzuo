@@ -39,8 +39,11 @@
 {
     NSMutableArray *arr_read = [NSMutableArray arrayWithCapacity:0];
     [arr_read addObjectsFromArray:[self readUserId_all][@"user"]];
-    if(![arr_read containsObject:string])
-        [arr_read addObject:string];
+    if([arr_read containsObject:string])
+    {
+        [arr_read removeObject:string];
+    }
+    [arr_read addObject:string];
     [[NSMutableDictionary dictionaryWithObjectsAndKeys:arr_read,@"user", nil] writeToFile:[self filePathplist_userId] atomically:YES];
     
     

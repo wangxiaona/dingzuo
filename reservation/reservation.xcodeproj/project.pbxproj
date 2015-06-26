@@ -51,6 +51,8 @@
 		013C44B11B3154E60056CFD1 /* EGOImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44AA1B3154E60056CFD1 /* EGOImageLoader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		013C44B21B3154E60056CFD1 /* EGOImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44AD1B3154E60056CFD1 /* EGOImageView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		013C44B51B31570C0056CFD1 /* NNSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44B41B31570C0056CFD1 /* NNSingleton.m */; };
+		013E722C1B3D31880033DFED /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 013E72291B3D31880033DFED /* SVProgressHUD.bundle */; };
+		013E722D1B3D31880033DFED /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 013E722B1B3D31880033DFED /* SVProgressHUD.m */; };
 		015083D31B2EB65B00028FC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 015083D21B2EB65B00028FC0 /* main.m */; };
 		015083D61B2EB65B00028FC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 015083D51B2EB65B00028FC0 /* AppDelegate.m */; };
 		015083D91B2EB65B00028FC0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015083D81B2EB65B00028FC0 /* ViewController.m */; };
@@ -81,9 +83,6 @@
 		015084481B2EBC7200028FC0 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0150842F1B2EBC7200028FC0 /* UIRefreshControl+AFNetworking.m */; };
 		015084491B2EBC7200028FC0 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 015084311B2EBC7200028FC0 /* UIWebView+AFNetworking.m */; };
 		0150844F1B2EBCB900028FC0 /* NNManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0150844E1B2EBCB900028FC0 /* NNManager.m */; };
-		015084561B2EBD9000028FC0 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 015084521B2EBD9000028FC0 /* SVIndefiniteAnimatedView.m */; };
-		015084571B2EBD9000028FC0 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 015084531B2EBD9000028FC0 /* SVProgressHUD.bundle */; };
-		015084581B2EBD9000028FC0 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 015084551B2EBD9000028FC0 /* SVProgressHUD.m */; };
 		0150845A1B2EBDF200028FC0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 015084591B2EBDF200028FC0 /* CFNetwork.framework */; };
 		0150845C1B2EBDF700028FC0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0150845B1B2EBDF700028FC0 /* MobileCoreServices.framework */; };
 		0150845E1B2EBE1100028FC0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0150845D1B2EBE1100028FC0 /* Security.framework */; };
@@ -218,6 +217,9 @@
 		013C44B41B31570C0056CFD1 /* NNSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNSingleton.m; sourceTree = "<group>"; };
 		013E72211B3CF5980033DFED /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		013E72221B3CF5980033DFED /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		013E72291B3D31880033DFED /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		013E722A1B3D31880033DFED /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		013E722B1B3D31880033DFED /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		015083CD1B2EB65B00028FC0 /* reservation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reservation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		015083D11B2EB65B00028FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		015083D21B2EB65B00028FC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -277,11 +279,6 @@
 		015084311B2EBC7200028FC0 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		0150844D1B2EBCB900028FC0 /* NNManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNManager.h; sourceTree = "<group>"; };
 		0150844E1B2EBCB900028FC0 /* NNManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNManager.m; sourceTree = "<group>"; };
-		015084511B2EBD9000028FC0 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		015084521B2EBD9000028FC0 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
-		015084531B2EBD9000028FC0 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
-		015084541B2EBD9000028FC0 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
-		015084551B2EBD9000028FC0 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		015084591B2EBDF200028FC0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		0150845B1B2EBDF700028FC0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		0150845D1B2EBE1100028FC0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -579,6 +576,16 @@
 			path = EGOImageView;
 			sourceTree = "<group>";
 		};
+		013E72281B3D31880033DFED /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				013E72291B3D31880033DFED /* SVProgressHUD.bundle */,
+				013E722A1B3D31880033DFED /* SVProgressHUD.h */,
+				013E722B1B3D31880033DFED /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
 		015083C41B2EB65B00028FC0 = {
 			isa = PBXGroup;
 			children = (
@@ -704,8 +711,8 @@
 				013C445E1B311F620056CFD1 /* Floder */,
 				013C44571B311D0B0056CFD1 /* UPStackMenu */,
 				013BC00D1B2FBC8300155EAB /* ZBarSDK */,
-				015084501B2EBD9000028FC0 /* SVProgressHUD */,
 				015084091B2EBC7200028FC0 /* AFNetworking */,
+				013E72281B3D31880033DFED /* SVProgressHUD */,
 			);
 			path = third;
 			sourceTree = "<group>";
@@ -771,18 +778,6 @@
 				015084311B2EBC7200028FC0 /* UIWebView+AFNetworking.m */,
 			);
 			path = "UIKit+AFNetworking";
-			sourceTree = "<group>";
-		};
-		015084501B2EBD9000028FC0 /* SVProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				015084511B2EBD9000028FC0 /* SVIndefiniteAnimatedView.h */,
-				015084521B2EBD9000028FC0 /* SVIndefiniteAnimatedView.m */,
-				015084531B2EBD9000028FC0 /* SVProgressHUD.bundle */,
-				015084541B2EBD9000028FC0 /* SVProgressHUD.h */,
-				015084551B2EBD9000028FC0 /* SVProgressHUD.m */,
-			);
-			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -869,7 +864,6 @@
 				01668E441B391FC200136D5F /* QQPimTimelineInfoIconHighlight@2x.png in Resources */,
 				015083DC1B2EB65B00028FC0 /* Main.storyboard in Resources */,
 				01668E451B391FC200136D5F /* QQPimTimelineInfoIconHighlight@3x.png in Resources */,
-				015084571B2EBD9000028FC0 /* SVProgressHUD.bundle in Resources */,
 				01668E471B391FC200136D5F /* saomiao_icon@2x.png in Resources */,
 				01668E3F1B391FC200136D5F /* QQPimSyncViewMore_highlight@2x.png in Resources */,
 				013BC02C1B2FBC8300155EAB /* zbar-back.png in Resources */,
@@ -909,6 +903,7 @@
 				01668E481B391FC200136D5F /* saomiao_icon@3x.png in Resources */,
 				01668E3C1B391FC200136D5F /* merge_check@3x.png in Resources */,
 				013BC0461B2FC73A00155EAB /* BindViewController.xib in Resources */,
+				013E722C1B3D31880033DFED /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -926,10 +921,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				015084561B2EBD9000028FC0 /* SVIndefiniteAnimatedView.m in Sources */,
 				013C44B01B3154E60056CFD1 /* EGOImageLoadConnection.m in Sources */,
 				0150843C1B2EBC7200028FC0 /* AFURLConnectionOperation.m in Sources */,
 				013C44751B312DD80056CFD1 /* CateTableViewCell.m in Sources */,
+				013E722D1B3D31880033DFED /* SVProgressHUD.m in Sources */,
 				013C44651B311F620056CFD1 /* FolderCoverView.m in Sources */,
 				013BC03A1B2FC61500155EAB /* UserListViewController.m in Sources */,
 				013C448A1B3140CA0056CFD1 /* UIView+Sizes.m in Sources */,
@@ -942,7 +937,6 @@
 				015084421B2EBC7200028FC0 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				0150843D1B2EBC7200028FC0 /* AFURLRequestSerialization.m in Sources */,
 				015084071B2EBB3F00028FC0 /* UIViewController+BackBar.m in Sources */,
-				015084581B2EBD9000028FC0 /* SVProgressHUD.m in Sources */,
 				013C44981B31491E0056CFD1 /* GroupTableViewCell.m in Sources */,
 				013C445D1B311D0B0056CFD1 /* UPStackMenuItem.m in Sources */,
 				015084471B2EBC7200028FC0 /* UIProgressView+AFNetworking.m in Sources */,

@@ -59,7 +59,7 @@
     reader.readerDelegate = self;
     reader.supportedOrientationsMask = ZBarOrientationMaskAll;
     reader.showsZBarControls=NO;
-    reader.scanCrop = CGRectMake(0.1, 0.2, 0.8, 0.8);
+//    reader.scanCrop = CGRectMake(0.1, 0.2, 0.8, 0.8);
     
     [self setOverlayPickerView:reader];
     
@@ -89,11 +89,6 @@
 - (IBAction)timetableButtonPressed:(id)sender {
 //    [self.navigationController pushViewController:timetableController animated:YES];
 }
--(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
-{
-    
-    [self dismissModalViewControllerAnimated: YES];
-}
 - (void) imagePickerController: (UIImagePickerController*) reader
  didFinishPickingMediaWithInfo: (NSDictionary*) info
 {
@@ -102,7 +97,6 @@
     ZBarSymbol *symbol = nil;
     for(symbol in results)
         break;
-    [reader dismissViewControllerAnimated:YES completion:nil];
     NSString *string = symbol.data;
     NSLog(@"%@",string);
     
@@ -110,52 +104,68 @@
     NSString *string_memberid = [[NNSingleton sharedSingleton] readUserId];
     NSString * api = [string stringByAppendingString:string_memberid];
     NSLog(@"%@",api);
-    [[NNManager sharedInterface] POST:api parameters:nil constructingBodyWithBlock:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    
+    [reader dismissViewControllerAnimated:YES completion:nil];
+
+    [[NNManager sharedInterface]GET:api parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
         [SVProgressHUD dismiss];
         if([responseObject[@"success"]boolValue])
         {
-            selectViewController.type_n = [responseObject[@"nextStep"] isEqualToString:@"chooseProduct"];
-            if(selectViewController.type_n)
+            NSString *nextStep = [NSString stringWithFormat:@"%@",responseObject[@"nextStep"]];
+            NSDictionary *dataDic = responseObject[@"data"];
+            NSMutableString *string_param = [NSMutableString stringWithCapacity:0];
+            if([nextStep isEqualToString:@"reserveOrAttend"])
             {
+                for(NSString *string_key in [dataDic allKeys])
+                {
+                    [string_param appendString:[NSString stringWithFormat:@"&%@",string_key]];
+                    [string_param appendString:[NSString stringWithFormat:@"=%@",dataDic[string_key]]];
+                }
+                NSString *api_string = [NSString stringWithFormat:@"%@/wanyogaAdmin/ajaxMemberReserveOrAttend.rmt%@",API_NN,string_param];
+                NSLog(@"%@",api_string);
+                [[NNManager sharedInterface]GET:api_string parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                    
+                    [SVProgressHUD dismiss];
+                    if([responseObject[@"success"]boolValue])
+                    {
+                        NSString *msgString = [NSString stringWithFormat:@"%@,%@,%@",responseObject[@"msg"],responseObject[@"lession"],responseObject[@"seatNo"]];
+                        [SVProgressHUD showSuccessWithStatus:msgString duration:1];
+                    }
+                    else
+                    {
+                        [SVProgressHUD showErrorWithStatus:responseObject[@"msg"] duration:1];
+                    }
+                    [reader dismissViewControllerAnimated:YES completion:nil];
+                    
+                } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                    [SVProgressHUD showErrorWithStatus:[error description] duration:1];
+                }];
+            }
+            else if([nextStep isEqualToString:@"chooseProduct"]){//选择产品
+                [SVProgressHUD dismiss];
+                selectViewController.type_n = YES;
                 selectViewController.tableViewList = responseObject[@"products"];
+                [self.navigationController pushViewController:selectViewController animated:NO];
+
             }
-            else
-            {
+            else if([nextStep isEqualToString:@"chooseGroup"]){//选择班级
+                [SVProgressHUD dismiss];
+                selectViewController.type_n = NO;
                 selectViewController.tableViewList = responseObject[@"groups"];
+                [self.navigationController pushViewController:selectViewController animated:NO];
+
             }
-            [self.navigationController pushViewController:selectViewController animated:NO];
+            
         }
         else
         {
-            [SVProgressHUD showErrorWithStatus:@"失败"];
+            [SVProgressHUD showErrorWithStatus:responseObject[@"msg"] duration:1];
         }
+        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        [SVProgressHUD showErrorWithStatus:@"失败"];
+        [SVProgressHUD showErrorWithStatus:[error description] duration:1];
     }];
-//    [[NNManager sharedInterface]GET:api parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-//        
-//        [SVProgressHUD dismiss];
-//        if([responseObject[@"success"]boolValue])
-//        {
-//            selectViewController.type_n = [responseObject[@"nextStep"] isEqualToString:@"chooseProduct"];
-//            if(selectViewController.type_n)
-//            {
-//                selectViewController.tableViewList = responseObject[@"products"];
-//            }
-//            else
-//            {
-//                selectViewController.tableViewList = responseObject[@"groups"];
-//            }
-//            [self.navigationController pushViewController:selectViewController animated:NO];
-//        }
-//        else
-//        {
-//            [SVProgressHUD showErrorWithStatus:@"失败"];
-//        }
-//        
-//    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-//        [SVProgressHUD showErrorWithStatus:@"失败"];
-//    }];
 
     
 }
