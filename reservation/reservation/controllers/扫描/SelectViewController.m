@@ -97,7 +97,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     NSDictionary *dic = self.tableViewList[indexPath.row];
-    NSString *idString = [NSString stringWithFormat:@"&productRemainingIdOrGroupId=%@",dic[@"id"]];
+    NSString *idString = [NSString stringWithFormat:@"?productRemainingIdOrGroupId=%@",dic[@"id"]];
     [SVProgressHUD showWithStatus:@"加载中"];
     NSString *api_string = [NSString stringWithFormat:@"%@/wanyogaAdmin/ajaxMemberReserveOrAttend.rmt%@",API_NN,idString];
     NSLog(@"%@",api_string);

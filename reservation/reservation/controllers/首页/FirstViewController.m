@@ -117,10 +117,15 @@
             NSMutableString *string_param = [NSMutableString stringWithCapacity:0];
             if([nextStep isEqualToString:@"reserveOrAttend"])
             {
+                int i_dic = 0;
                 for(NSString *string_key in [dataDic allKeys])
                 {
-                    [string_param appendString:[NSString stringWithFormat:@"&%@",string_key]];
+                    if(i_dic)
+                        [string_param appendString:[NSString stringWithFormat:@"&%@",string_key]];
+                    else
+                        [string_param appendString:[NSString stringWithFormat:@"?%@",string_key]];
                     [string_param appendString:[NSString stringWithFormat:@"=%@",dataDic[string_key]]];
+                    i_dic++;
                 }
                 NSString *api_string = [NSString stringWithFormat:@"%@/wanyogaAdmin/ajaxMemberReserveOrAttend.rmt%@",API_NN,string_param];
                 NSLog(@"%@",api_string);
