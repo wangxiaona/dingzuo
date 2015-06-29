@@ -25,7 +25,37 @@
     }
 }
 
+-(NSString *) filePathplist_userDetail
+{
+    NSArray * array = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString * docPath = [array objectAtIndex:0];
+    NSString * fileName = [docPath stringByAppendingPathComponent:@"userDetail.plist"];
+    return fileName;
+}
 
+-(void)saveUserDetail:(NSDictionary *)string
+{
+    NSMutableArray *arr_read = [NSMutableArray arrayWithCapacity:0];
+    [arr_read addObjectsFromArray:[self readUserDetail][@"user"]];
+    if([arr_read containsObject:string])
+    {
+        [arr_read removeObject:string];
+    }
+    [arr_read addObject:string];
+    [[NSMutableDictionary dictionaryWithObjectsAndKeys:arr_read,@"user", nil] writeToFile:[self filePathplist_userDetail] atomically:YES];
+    
+    
+}
+-(NSDictionary *)readUserDetail
+{
+    NSDictionary *dic=[NSDictionary dictionaryWithContentsOfFile:[self filePathplist_userDetail]];
+    NSArray *arr_user = dic[@"user"];
+    if(arr_user.count)
+        return [arr_user lastObject];
+    else
+        return nil;
+    
+}
 
 -(NSString *) filePathplist_userId
 {

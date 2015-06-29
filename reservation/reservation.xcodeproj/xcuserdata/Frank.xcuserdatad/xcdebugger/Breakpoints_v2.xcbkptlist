@@ -94,11 +94,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "reservation/controllers/&#x7ed1;&#x5b9a;&#x7528;&#x6237;/BindViewController.m"
-            timestampString = "456989890.874722"
+            timestampString = "457235510.794321"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "-bangdingPressed:"
             landmarkType = "5">
          </BreakpointContent>
@@ -110,11 +110,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "reservation/NNSingleton.m"
-            timestampString = "456994578.510351"
+            timestampString = "457235510.794321"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
             landmarkName = "-readUserId"
             landmarkType = "5">
          </BreakpointContent>
@@ -126,11 +126,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "reservation/NNSingleton.m"
-            timestampString = "456994578.510351"
+            timestampString = "457235510.794321"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "-saveUserId:"
             landmarkType = "5">
          </BreakpointContent>
@@ -142,11 +142,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "reservation/NNSingleton.m"
-            timestampString = "456994578.510351"
+            timestampString = "457235510.794321"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "-readUserId_all"
             landmarkType = "5">
          </BreakpointContent>
@@ -158,11 +158,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "reservation/NNSingleton.m"
-            timestampString = "456994578.510351"
+            timestampString = "457235510.794321"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "-readUserId_all"
             landmarkType = "5">
          </BreakpointContent>
@@ -174,11 +174,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "reservation/controllers/&#x7ed1;&#x5b9a;&#x7528;&#x6237;/BindViewController.m"
-            timestampString = "456989890.874722"
+            timestampString = "457235510.794321"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "-bangdingPressed:"
             landmarkType = "5">
          </BreakpointContent>
@@ -190,11 +190,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "reservation/controllers/&#x7ed1;&#x5b9a;&#x7528;&#x6237;/BindViewController.m"
-            timestampString = "456989890.874722"
+            timestampString = "457235510.794321"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "-bangdingPressed:"
             landmarkType = "5">
          </BreakpointContent>
@@ -356,6 +356,22 @@
             startingLineNumber = "129"
             endingLineNumber = "129"
             landmarkName = "-imagePickerController:didFinishPickingMediaWithInfo:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "reservation/controllers/&#x8ba4;&#x8bc1;&#x7528;&#x6237;list/UserListViewController.m"
+            timestampString = "457235917.476191"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "-viewWillAppear:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

@@ -13,5 +13,10 @@
 -(void)saveUserId:(NSString *)dic;
 -(NSString *)readUserId;
 + (NNSingleton *)sharedSingleton;
+
+-(void)saveUserDetail:(NSDictionary *)string;
+
+-(NSDictionary *)readUserDetail;
+
 - (void)setExtraCellLineHidden: (UITableView *)tableView;
 @end

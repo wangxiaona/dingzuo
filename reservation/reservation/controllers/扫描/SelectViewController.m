@@ -45,9 +45,10 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSDictionary *dic = self.tableViewList[indexPath.row];
-    switch (self.type_n) {
-        case YES:
+    int flag = self.type_n;
+    NSDictionary *dic_row = self.tableViewList[indexPath.row];
+    switch (flag) {
+        case 1:
         {
             static NSString *cellIdentifier = @"projectsCell";
             ProjectTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
@@ -59,14 +60,14 @@
                 cell.selectionStyle = UITableViewCellSelectionStyleGray;
                 
             }
-            cell.nameLabel.text = dic[@"name"];
-            cell.yueLabel.text = dic[@"remainValidMoney"];
-            cell.cishuLabel.text = dic[@"remainUseTimes"];
-            cell.timeLabel.text = dic[@"name"];
+            cell.nameLabel.text = dic_row[@"name"];
+            cell.yueLabel.text = dic_row[@"remainValidMoney"];
+            cell.cishuLabel.text = dic_row[@"remainUseTimes"];
+            cell.timeLabel.text = dic_row[@"name"];
             return cell;
         }
             break;
-        case NO:
+        case 0:
         {
             static NSString *cellIdentifier = @"groupsCell";
             GroupTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
@@ -77,9 +78,9 @@
                 cell = [array objectAtIndex:0];
                 cell.selectionStyle = UITableViewCellSelectionStyleGray;
                 
-                cell.nameLabel.text = dic[@"name"];
-                cell.fuzerenLabel.text = dic[@"manager"];
-                cell.bianhaoLabel.text = dic[@"groupNo"];
+                cell.nameLabel.text = dic_row[@"name"];
+                cell.fuzerenLabel.text = dic_row[@"manager"];
+                cell.bianhaoLabel.text = dic_row[@"groupNo"];
                 
             }
             
@@ -102,7 +103,7 @@
     NSLog(@"%@",api_string);
     [[NNManager sharedInterface]GET:api_string parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
-        [SVProgressHUD dismiss];
+//        [SVProgressHUD dismiss];
         if([responseObject[@"success"]boolValue])
         {
             NSString *msgString = [NSString stringWithFormat:@"%@,%@,%@",responseObject[@"msg"],responseObject[@"lession"],responseObject[@"seatNo"]];

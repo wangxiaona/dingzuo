@@ -10,4 +10,6 @@
 
 @interface UserListViewController : UIViewController
 
+@property(strong,nonatomic)NSMutableArray *tableViewList;
+
 @end

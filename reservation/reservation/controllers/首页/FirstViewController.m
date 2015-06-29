@@ -109,7 +109,7 @@
 
     [[NNManager sharedInterface]GET:api parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
-        [SVProgressHUD dismiss];
+//        [SVProgressHUD dismiss];
         if([responseObject[@"success"]boolValue])
         {
             NSString *nextStep = [NSString stringWithFormat:@"%@",responseObject[@"nextStep"]];
@@ -126,7 +126,7 @@
                 NSLog(@"%@",api_string);
                 [[NNManager sharedInterface]GET:api_string parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
                     
-                    [SVProgressHUD dismiss];
+//                    [SVProgressHUD dismiss];
                     if([responseObject[@"success"]boolValue])
                     {
                         NSString *msgString = [NSString stringWithFormat:@"%@,%@,%@",responseObject[@"msg"],responseObject[@"lession"],responseObject[@"seatNo"]];

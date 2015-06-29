@@ -53,6 +53,8 @@
 		013C44B51B31570C0056CFD1 /* NNSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C44B41B31570C0056CFD1 /* NNSingleton.m */; };
 		013E722C1B3D31880033DFED /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 013E72291B3D31880033DFED /* SVProgressHUD.bundle */; };
 		013E722D1B3D31880033DFED /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 013E722B1B3D31880033DFED /* SVProgressHUD.m */; };
+		013F02C81B40D22000D14553 /* UerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 013F02C61B40D22000D14553 /* UerViewController.m */; };
+		013F02C91B40D22000D14553 /* UerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 013F02C71B40D22000D14553 /* UerViewController.xib */; };
 		015083D31B2EB65B00028FC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 015083D21B2EB65B00028FC0 /* main.m */; };
 		015083D61B2EB65B00028FC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 015083D51B2EB65B00028FC0 /* AppDelegate.m */; };
 		015083D91B2EB65B00028FC0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015083D81B2EB65B00028FC0 /* ViewController.m */; };
@@ -220,6 +222,9 @@
 		013E72291B3D31880033DFED /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		013E722A1B3D31880033DFED /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		013E722B1B3D31880033DFED /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		013F02C51B40D22000D14553 /* UerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UerViewController.h; sourceTree = "<group>"; };
+		013F02C61B40D22000D14553 /* UerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UerViewController.m; sourceTree = "<group>"; };
+		013F02C71B40D22000D14553 /* UerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UerViewController.xib; sourceTree = "<group>"; };
 		015083CD1B2EB65B00028FC0 /* reservation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reservation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		015083D11B2EB65B00028FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		015083D21B2EB65B00028FC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -425,6 +430,9 @@
 				01668E4D1B39300900136D5F /* UserTableViewCell.h */,
 				01668E4E1B39300900136D5F /* UserTableViewCell.m */,
 				01668E4F1B39300900136D5F /* UserTableViewCell.xib */,
+				013F02C51B40D22000D14553 /* UerViewController.h */,
+				013F02C61B40D22000D14553 /* UerViewController.m */,
+				013F02C71B40D22000D14553 /* UerViewController.xib */,
 			);
 			path = "认证用户list";
 			sourceTree = "<group>";
@@ -871,6 +879,7 @@
 				01668E3E1B391FC200136D5F /* QQPimSyncViewFlowBackgroundImage@3x.jpg in Resources */,
 				01668E3A1B391FC200136D5F /* down_arrow@2x.png in Resources */,
 				013C448D1B31431D0056CFD1 /* 单选-icon96x96-默认@2x.png in Resources */,
+				013F02C91B40D22000D14553 /* UerViewController.xib in Resources */,
 				015083E11B2EB65B00028FC0 /* LaunchScreen.xib in Resources */,
 				013C448E1B31431D0056CFD1 /* 单选-icon96x96-选中@2x.png in Resources */,
 				01668E491B391FC200136D5F /* title_icon_add_def@2x.png in Resources */,
@@ -962,6 +971,7 @@
 				013C44871B31406B0056CFD1 /* UIBarButtonItem+Factory.m in Sources */,
 				013C44B51B31570C0056CFD1 /* NNSingleton.m in Sources */,
 				015084481B2EBC7200028FC0 /* UIRefreshControl+AFNetworking.m in Sources */,
+				013F02C81B40D22000D14553 /* UerViewController.m in Sources */,
 				015084411B2EBC7200028FC0 /* README.md in Sources */,
 				013C44661B311F620056CFD1 /* UIFolderTableView.m in Sources */,
 				013C44AE1B3154E60056CFD1 /* EGOCache.m in Sources */,

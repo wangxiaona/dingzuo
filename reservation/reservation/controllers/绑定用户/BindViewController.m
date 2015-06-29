@@ -24,7 +24,7 @@
     self.navigationItem.title = @"绑定用户";
     [self setCustomizeBackBar];
     
-    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTitle:@"登录" target:self action:@selector(bangdingPressed:)];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTitle:@"绑定" target:self action:@selector(bangdingPressed:)];
     
     self.type = @{@"title":@"会员编号",@"keyword":@"memberId"};
     
@@ -55,6 +55,9 @@
     self.verifyTypeNum = cell.textField1.text;
     self.verifyNum = cell2.textField1.text;
     self.huiguanNum = cell3.textField1.text;
+    
+    NSDictionary *dic = @{self.type[@"title"]:self.verifyTypeNum,@"身份认证编号":self.verifyNum,@"会馆编号":self.huiguanNum};
+    [[NNSingleton sharedSingleton] saveUserDetail:dic];
     
     if(!self.verifyTypeNum.length)
     {
@@ -139,6 +142,7 @@
         default:
             break;
     }
+    cell.userInteractionEnabled = YES;
     cell.textField1.placeholder = [NSString stringWithFormat:@"请填写%@",cell.label1.text];
     cell.textField1.tag = indexPath.row;
 
