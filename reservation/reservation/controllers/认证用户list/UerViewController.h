@@ -2,8 +2,8 @@
 //  UerViewController.h
 //  reservation
 //
-//  Created by 王晓娜 on 15/6/29.
-//  Copyright (c) 2015年 wangxiaona. All rights reserved.
+//  Created by iOS开发 on 15/6/29.
+//  Copyright (c) 2015年 iOS. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
