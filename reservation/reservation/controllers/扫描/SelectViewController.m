@@ -20,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self setCustomizeBackBar];
-    self.tableViewList = [NSMutableArray arrayWithCapacity:0];
+//    self.tableViewList = [NSMutableArray arrayWithCapacity:0];
     
     [[NNSingleton sharedSingleton] setExtraCellLineHidden:self.tableView];
 }
@@ -60,10 +60,10 @@
                 cell.selectionStyle = UITableViewCellSelectionStyleGray;
                 
             }
-            cell.nameLabel.text = dic_row[@"name"];
-            cell.yueLabel.text = dic_row[@"remainValidMoney"];
-            cell.cishuLabel.text = dic_row[@"remainUseTimes"];
-            cell.timeLabel.text = dic_row[@"name"];
+            cell.nameLabel.text = [NSString stringWithFormat:@"%@",dic_row[@"product"][@"name"]];
+            cell.yueLabel.text = [NSString stringWithFormat:@"%@",dic_row[@"remainValidMoney"]];
+            cell.cishuLabel.text = [NSString stringWithFormat:@"%@",dic_row[@"remainUseTimes"]];
+            cell.timeLabel.text = [NSString stringWithFormat:@"%@",dic_row[@"remainValidTime"]];
             return cell;
         }
             break;
@@ -78,9 +78,9 @@
                 cell = [array objectAtIndex:0];
                 cell.selectionStyle = UITableViewCellSelectionStyleGray;
                 
-                cell.nameLabel.text = dic_row[@"name"];
-                cell.fuzerenLabel.text = dic_row[@"manager"];
-                cell.bianhaoLabel.text = dic_row[@"groupNo"];
+                cell.nameLabel.text = [NSString stringWithFormat:@"%@",dic_row[@"name"]];
+                cell.fuzerenLabel.text = [NSString stringWithFormat:@"%@",dic_row[@"manager"]];
+                cell.bianhaoLabel.text = [NSString stringWithFormat:@"%@",dic_row[@"groupNo"]];
                 
             }
             
