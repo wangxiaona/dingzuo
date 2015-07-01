@@ -11,7 +11,7 @@
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>806A92BBE4C02EADD76B2DA88A2A65E1A8900FA2</key>
-		<string>https://bitbucket.org/dingzuo/--.git</string>
+		<string>https://github.com/wangxiaona/dingzuo</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>reservation/reservation.xcodeproj</string>
@@ -21,7 +21,7 @@
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://bitbucket.org/dingzuo/--.git</string>
+	<string>https://github.com/wangxiaona/dingzuo</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>

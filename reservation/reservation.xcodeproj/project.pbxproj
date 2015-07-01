@@ -118,6 +118,7 @@
 		01668E4C1B391FC200136D5F /* WechatCard_set_icon_add@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01668E361B391FC200136D5F /* WechatCard_set_icon_add@3x.png */; };
 		01668E501B39300900136D5F /* UserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01668E4E1B39300900136D5F /* UserTableViewCell.m */; };
 		01668E511B39300900136D5F /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01668E4F1B39300900136D5F /* UserTableViewCell.xib */; };
+		017CB8C31B43A26C00234D7C /* kebiao.png in Resources */ = {isa = PBXBuildFile; fileRef = 017CB8C21B43A26C00234D7C /* kebiao.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -307,6 +308,7 @@
 		01668E4D1B39300900136D5F /* UserTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTableViewCell.h; sourceTree = "<group>"; };
 		01668E4E1B39300900136D5F /* UserTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTableViewCell.m; sourceTree = "<group>"; };
 		01668E4F1B39300900136D5F /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		017CB8C21B43A26C00234D7C /* kebiao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kebiao.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -471,6 +473,7 @@
 		013C44821B3136580056CFD1 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				017CB8C21B43A26C00234D7C /* kebiao.png */,
 				01668E211B391FC200136D5F /* contacts_user_avatar_default_l.png */,
 				01668E221B391FC200136D5F /* contacts_user_avatar_default_l@3x.png */,
 				01668E231B391FC200136D5F /* down_arrow.png */,
@@ -865,6 +868,7 @@
 				015084401B2EBC7200028FC0 /* LICENSE in Resources */,
 				013BC02E1B2FBC8300155EAB /* zbar-helpicons.png in Resources */,
 				013C449E1B31492F0056CFD1 /* ProjectTableViewCell.xib in Resources */,
+				017CB8C31B43A26C00234D7C /* kebiao.png in Resources */,
 				01668E4A1B391FC200136D5F /* title_icon_add_def@3x.png in Resources */,
 				01668E481B391FC200136D5F /* saomiao_icon@3x.png in Resources */,
 				01668E3C1B391FC200136D5F /* merge_check@3x.png in Resources */,
