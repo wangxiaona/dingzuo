@@ -10,6 +10,7 @@
 
 @interface SelectViewController : UIViewController
 @property(nonatomic) BOOL type_n;
+@property (strong,nonatomic) NSString *string_api;
 @property(strong,nonatomic) NSMutableArray *tableViewList;
 
 @end

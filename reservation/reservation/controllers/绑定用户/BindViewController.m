@@ -33,6 +33,16 @@
              bundle:nil];
     subVc.bindVc = self;
     [self.tableView setSeparatorInset:UIEdgeInsetsZero];
+    [self setExtraCellLineHidden:self.tableView];
+}
+
+- (void)setExtraCellLineHidden: (UITableView *)tableView{
+    
+    UIView *view =[ [UIView alloc]init];
+    
+    view.backgroundColor = [UIColor clearColor];
+    
+    [tableView setTableFooterView:view];
 }
 -(void)viewWillAppear:(BOOL)animated
 {

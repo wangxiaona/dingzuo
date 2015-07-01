@@ -35,7 +35,7 @@
     self.pointView.layer.masksToBounds = YES;
     
     userListController = [[UserListViewController alloc] initWithNibName:@"UserListViewController" bundle:nil];
-    bindController = [[BindViewController alloc] initWithNibName:@"BindViewController" bundle:nil];
+    
     timetableController = [[TimeTableViewController alloc] initWithNibName:@"TimeTableViewController" bundle:nil];
     selectViewController = [[SelectViewController alloc] initWithNibName:@"SelectViewController" bundle:nil];
     [super viewDidLoad];
@@ -50,6 +50,7 @@
     [self.navigationController pushViewController:userListController animated:YES];
 }
 - (IBAction)verifyButtonPressed:(id)sender {
+    bindController = [[BindViewController alloc] initWithNibName:@"BindViewController" bundle:nil];
     [self.navigationController pushViewController:bindController animated:YES];
 }
 - (IBAction)scanButtonPressed:(id)sender {
@@ -110,23 +111,27 @@
     [[NNManager sharedInterface]GET:api parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
 //        [SVProgressHUD dismiss];
+        NSLog(@"%@",responseObject);
         if([responseObject[@"success"]boolValue])
         {
             NSString *nextStep = [NSString stringWithFormat:@"%@",responseObject[@"nextStep"]];
             NSDictionary *dataDic = responseObject[@"data"];
             NSMutableString *string_param = [NSMutableString stringWithCapacity:0];
+            
+            int i_dic = 0;
+            for(NSString *string_key in [dataDic allKeys])
+            {
+                if(i_dic)
+                    [string_param appendString:[NSString stringWithFormat:@"&%@",string_key]];
+                else
+                    [string_param appendString:[NSString stringWithFormat:@"?%@",string_key]];
+                [string_param appendString:[NSString stringWithFormat:@"=%@",dataDic[string_key]]];
+                i_dic++;
+            }
+            
             if([nextStep isEqualToString:@"reserveOrAttend"])
             {
-                int i_dic = 0;
-                for(NSString *string_key in [dataDic allKeys])
-                {
-                    if(i_dic)
-                        [string_param appendString:[NSString stringWithFormat:@"&%@",string_key]];
-                    else
-                        [string_param appendString:[NSString stringWithFormat:@"?%@",string_key]];
-                    [string_param appendString:[NSString stringWithFormat:@"=%@",dataDic[string_key]]];
-                    i_dic++;
-                }
+                
                 NSString *api_string = [NSString stringWithFormat:@"%@/wanyogaAdmin/ajaxMemberReserveOrAttend.rmt%@",API_NN,string_param];
                 NSLog(@"%@",api_string);
                 [[NNManager sharedInterface]GET:api_string parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -150,6 +155,7 @@
             else if([nextStep isEqualToString:@"chooseProduct"]){//选择产品
                 [SVProgressHUD dismiss];
                 selectViewController.type_n = YES;
+                selectViewController.string_api = string_param;
                 selectViewController.tableViewList = responseObject[@"products"];
                 [self.navigationController pushViewController:selectViewController animated:NO];
 
@@ -157,6 +163,7 @@
             else if([nextStep isEqualToString:@"chooseGroup"]){//选择班级
                 [SVProgressHUD dismiss];
                 selectViewController.type_n = NO;
+                selectViewController.string_api = string_param;
                 selectViewController.tableViewList = responseObject[@"groups"];
                 [self.navigationController pushViewController:selectViewController animated:NO];
 

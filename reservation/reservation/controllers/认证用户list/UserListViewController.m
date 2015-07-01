@@ -22,8 +22,18 @@
     
     self.navigationItem.title = @"绑定用户信息";
     [self setCustomizeBackBar];
-    
+    [self setExtraCellLineHidden:self.tableView];
 }
+
+- (void)setExtraCellLineHidden: (UITableView *)tableView{
+    
+    UIView *view =[ [UIView alloc]init];
+    
+    view.backgroundColor = [UIColor clearColor];
+    
+    [tableView setTableFooterView:view];
+}
+
 -(void)viewWillAppear:(BOOL)animated
 {
     
