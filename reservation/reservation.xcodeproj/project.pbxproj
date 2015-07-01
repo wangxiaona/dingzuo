@@ -118,6 +118,8 @@
 		01668E4C1B391FC200136D5F /* WechatCard_set_icon_add@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01668E361B391FC200136D5F /* WechatCard_set_icon_add@3x.png */; };
 		01668E501B39300900136D5F /* UserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01668E4E1B39300900136D5F /* UserTableViewCell.m */; };
 		01668E511B39300900136D5F /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01668E4F1B39300900136D5F /* UserTableViewCell.xib */; };
+		016F756B1B43BE760067F88E /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 016F75691B43BE760067F88E /* default@2x.png */; };
+		016F756C1B43BE760067F88E /* default@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 016F756A1B43BE760067F88E /* default@3x.png */; };
 		017CB8C31B43A26C00234D7C /* kebiao.png in Resources */ = {isa = PBXBuildFile; fileRef = 017CB8C21B43A26C00234D7C /* kebiao.png */; };
 /* End PBXBuildFile section */
 
@@ -308,6 +310,8 @@
 		01668E4D1B39300900136D5F /* UserTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTableViewCell.h; sourceTree = "<group>"; };
 		01668E4E1B39300900136D5F /* UserTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTableViewCell.m; sourceTree = "<group>"; };
 		01668E4F1B39300900136D5F /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		016F75691B43BE760067F88E /* default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default@2x.png"; sourceTree = "<group>"; };
+		016F756A1B43BE760067F88E /* default@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default@3x.png"; sourceTree = "<group>"; };
 		017CB8C21B43A26C00234D7C /* kebiao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kebiao.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -473,6 +477,8 @@
 		013C44821B3136580056CFD1 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				016F75691B43BE760067F88E /* default@2x.png */,
+				016F756A1B43BE760067F88E /* default@3x.png */,
 				017CB8C21B43A26C00234D7C /* kebiao.png */,
 				01668E211B391FC200136D5F /* contacts_user_avatar_default_l.png */,
 				01668E221B391FC200136D5F /* contacts_user_avatar_default_l@3x.png */,
@@ -833,6 +839,7 @@
 				015083DC1B2EB65B00028FC0 /* Main.storyboard in Resources */,
 				01668E451B391FC200136D5F /* QQPimTimelineInfoIconHighlight@3x.png in Resources */,
 				01668E471B391FC200136D5F /* saomiao_icon@2x.png in Resources */,
+				016F756B1B43BE760067F88E /* default@2x.png in Resources */,
 				01668E3F1B391FC200136D5F /* QQPimSyncViewMore_highlight@2x.png in Resources */,
 				013BC02C1B2FBC8300155EAB /* zbar-back.png in Resources */,
 				01668E431B391FC200136D5F /* QQPimTimelineInfoIconHighlight.png in Resources */,
@@ -860,6 +867,7 @@
 				015084031B2EBA9F00028FC0 /* FirstViewController.xib in Resources */,
 				01668E3D1B391FC200136D5F /* QQPimSyncViewFlowBackgroundImage@2x.jpg in Resources */,
 				01668E411B391FC200136D5F /* QQPimSyncViewMore_normal@2x.png in Resources */,
+				016F756C1B43BE760067F88E /* default@3x.png in Resources */,
 				01668E511B39300900136D5F /* UserTableViewCell.xib in Resources */,
 				013BC02F1B2FBC8300155EAB /* zbar-samples.png in Resources */,
 				01668E421B391FC200136D5F /* QQPimSyncViewMore_normal@3x.png in Resources */,
@@ -993,7 +1001,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1028,7 +1036,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1039,6 +1047,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: jun zhao (9YJF6YCZXZ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/reservation/PrefixHeader.pch";
@@ -1058,6 +1067,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: jun zhao (9YJF6YCZXZ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/reservation/PrefixHeader.pch";
